@@ -1,1 +1,45 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ERaja – Student Development Platform</title>
+<link rel="stylesheet" href="assets/css/core.css">
+</head>
+<body>
+
+<div class="container center">
+
+    <h1 class="logo">ERaja</h1>
+    <p class="tagline">Structured Student Development Platform</p>
+
+    <div class="card">
+        <h2>Select Role</h2>
+        <div class="button-group">
+            <button onclick="selectRole('student')">Student</button>
+            <button onclick="selectRole('parent')">Parent</button>
+            <button onclick="selectRole('teacher')">Teacher</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Select Age Group</h2>
+        <div class="button-group">
+            <button onclick="selectAge('2-5')">2–5</button>
+            <button onclick="selectAge('6-9')">6–9</button>
+            <button onclick="selectAge('10-13')">10–13</button>
+            <button onclick="selectAge('14-16')">14–16</button>
+        </div>
+    </div>
+
+    <button class="primary-btn" onclick="enterApp()">Enter Dashboard</button>
+
+</div>
+
+<script src="assets/js/storage.js"></script>
+<script src="assets/js/xp-engine.js"></script>
+<script src="assets/js/core.js"></script>
+
+</body>
+</html>
