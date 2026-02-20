@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ERaja – Student Development Platform</title>
+
+<link rel="stylesheet" href="assets/css/core.css">
+<link rel="stylesheet" href="assets/css/layout.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+<style>
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    font-family: system-ui, sans-serif;
+    color: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 520px;
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.select-group {
+    margin-bottom: 15px;
+}
+
+select, input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    background: #10b981;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Welcome to ERaja</h1>
+
+    <div class="select-group">
+        <input type="text" id="nameInput" placeholder="Enter Name">
+    </div>
+
+    <div class="select-group">
+        <select id="roleSelect">
+            <option value="student">Student</option>
+            <option value="parent">Parent</option>
+            <option value="teacher">Teacher</option>
+        </select>
+    </div>
+
+    <div class="select-group">
+        <select id="ageSelect">
+            <option value="2-5">2-5 Years</option>
+            <option value="6-10">6-10 Years</option>
+            <option value="11-15">11-15 Years</option>
+            <option value="16+">16+ Years</option>
+        </select>
+    </div>
+
+    <button onclick="startApp()">Enter Platform</button>
+</div>
+
+<script src="assets/js/storage.js"></script>
+<script src="assets/js/xp-engine.js"></script>
+<script src="assets/js/core.js"></script>
+
+<script>
+function startApp() {
+
+    const name = document.getElementById("nameInput").value || "Student";
+    const role = document.getElementById("roleSelect").value;
+    const age = document.getElementById("ageSelect").value;
+
+    ERajaCore.setUserRole(role, age, name);
+
+    window.location.href = "dashboard.html";
+}
+</script>
+
+</body>
+</html>
