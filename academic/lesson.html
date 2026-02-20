@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson – ERaja</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e2e8f0;
+}
+
+.header {
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+}
+
+.container {
+    padding: 20px;
+}
+
+.content-item {
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.primary {
+    background: #10b981;
+    color: white;
+}
+
+.secondary {
+    background: #3b82f6;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h2 id="lessonTitle">Lesson</h2>
+</div>
+
+<div class="container">
+
+    <div id="lessonContent">
+        Loading lesson...
+    </div>
+
+    <br>
+
+    <button class="primary" onclick="startQuiz()">Start Quiz</button>
+    <button class="secondary" onclick="goBack()">Back</button>
+
+</div>
+
+<script src="../assets/js/storage.js"></script>
+<script src="../assets/js/xp-engine.js"></script>
+<script src="../assets/js/core.js"></script>
+
+<script>
+
+let lessonData = null;
+
+async function loadLesson() {
+
+    const subject = localStorage.getItem("eraja_currentSubject");
+    const lessonId = localStorage.getItem("eraja_currentLesson");
+
+    if (!subject || !lessonId) {
+        window.location.href = "academic.html";
+        return;
+    }
+
+    try {
+        const response = await fetch(`../data/academic/${subject}.json`);
+        const data = await response.json();
+
+        lessonData = data.lessons.find(l => l.id === lessonId);
+
+        if (!lessonData) {
+            window.location.href = "academic.html";
+            return;
+        }
+
+        document.getElementById("lessonTitle").innerText = lessonData.title;
+
+        const container = document.getElementById("lessonContent");
+        container.innerHTML = "";
+
+        lessonData.content.forEach(point => {
+            const div = document.createElement("div");
+            div.className = "content-item";
+            div.innerText = point;
+            container.appendChild(div);
+        });
+
+        ERajaXP.completeLesson(lessonId);
+
+    } catch (error) {
+        console.error("Lesson Load Error:", error);
+    }
+}
+
+function startQuiz() {
+    window.location.href = "quiz.html";
+}
+
+function goBack() {
+    window.location.href = "subject.html";
+}
+
+document.addEventListener("DOMContentLoaded", loadLesson);
+
+</script>
+
+</body>
+</html>
