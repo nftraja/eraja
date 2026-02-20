@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz – ERaja</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e2e8f0;
+}
+
+.container {
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.question-box {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.option {
+    background: rgba(255,255,255,0.05);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #10b981;
+    color: white;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div id="quizArea">
+        Loading quiz...
+    </div>
+
+</div>
+
+<script src="../assets/js/storage.js"></script>
+<script src="../assets/js/xp-engine.js"></script>
+<script src="../assets/js/core.js"></script>
+
+<script>
+
+let quizData = [];
+let currentQuestion = 0;
+let score = 0;
+
+async function loadQuiz() {
+
+    const subject = localStorage.getItem("eraja_currentSubject");
+    const lessonId = localStorage.getItem("eraja_currentLesson");
+
+    const response = await fetch(`../data/academic/${subject}.json`);
+    const data = await response.json();
+
+    const lesson = data.lessons.find(l => l.id === lessonId);
+    quizData = lesson.quiz;
+
+    renderQuestion();
+}
+
+function renderQuestion() {
+
+    if (currentQuestion >= quizData.length) {
+        showResult();
+        return;
+    }
+
+    const questionObj = quizData[currentQuestion];
+
+    const container = document.getElementById("quizArea");
+
+    container.innerHTML = `
+        <div class="question-box">
+            <h3>${questionObj.question}</h3>
+            ${questionObj.options.map((opt, index) =>
+                `<div class="option" onclick="selectAnswer(${index})">${opt}</div>`
+            ).join("")}
+        </div>
+    `;
+}
+
+function selectAnswer(selectedIndex) {
+
+    if (selectedIndex === quizData[currentQuestion].answer) {
+        score++;
+    }
+
+    currentQuestion++;
+    renderQuestion();
+}
+
+function showResult() {
+
+    const container = document.getElementById("quizArea");
+
+    const percent = Math.round((score / quizData.length) * 100);
+
+    let xpReward = 0;
+
+    if (percent >= 80) xpReward = 30;
+    else if (percent >= 50) xpReward = 15;
+    else xpReward = 5;
+
+    ERajaXP.addXP(xpReward);
+
+    container.innerHTML = `
+        <div class="question-box">
+            <h2>Quiz Completed</h2>
+            <p>Score: ${score} / ${quizData.length}</p>
+            <p>Performance: ${percent}%</p>
+            <p>XP Earned: ${xpReward}</p>
+            <br>
+            <button onclick="goBack()">Back to Subject</button>
+        </div>
+    `;
+}
+
+function goBack() {
+    window.location.href = "subject.html";
+}
+
+document.addEventListener("DOMContentLoaded", loadQuiz);
+
+</script>
+
+</body>
+</html>
