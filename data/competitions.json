@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Google Science Fair",
+    "description": "Global science competition for students.",
+    "age": "13-18",
+    "type": "Free",
+    "url": "https://edu.google.com"
+  },
+  {
+    "name": "National Talent Search Examination",
+    "description": "Scholarship examination for Indian students.",
+    "age": "13-16",
+    "type": "Free",
+    "url": "https://ncert.nic.in"
+  },
+  {
+    "name": "International Mathematics Olympiad",
+    "description": "Global mathematics competition.",
+    "age": "10-18",
+    "type": "Paid",
+    "url": "https://www.imo-official.org"
+  },
+  {
+    "name": "CodeChef Contests",
+    "description": "Programming competitions for students.",
+    "age": "12-18",
+    "type": "Free",
+    "url": "https://www.codechef.com"
+  },
+  {
+    "name": "HackerRank Contests",
+    "description": "Online coding competitions.",
+    "age": "12-18",
+    "type": "Free",
+    "url": "https://www.hackerrank.com"
+  },
+  {
+    "name": "NASA Space Apps Challenge",
+    "description": "Global innovation and problem-solving hackathon.",
+    "age": "14-18",
+    "type": "Free",
+    "url": "https://www.spaceappschallenge.org"
+  },
+  {
+    "name": "World Robot Olympiad",
+    "description": "International robotics competition.",
+    "age": "8-18",
+    "type": "Paid",
+    "url": "https://wro-association.org"
+  },
+  {
+    "name": "Spell Bee International",
+    "description": "English spelling competition.",
+    "age": "8-16",
+    "type": "Paid",
+    "url": "https://www.spellbeeinternational.com"
+  },
+  {
+    "name": "SOF Olympiads",
+    "description": "Science Olympiad Foundation competitions.",
+    "age": "8-18",
+    "type": "Paid",
+    "url": "https://sofworld.org"
+  },
+  {
+    "name": "National Quiz Portal",
+    "description": "Educational quiz competitions.",
+    "age": "10-18",
+    "type": "Free",
+    "url": "https://quiz.mygov.in"
+  },
+  {
+    "name": "Microsoft Imagine Cup Junior",
+    "description": "Technology innovation challenge for students.",
+    "age": "13-18",
+    "type": "Free",
+    "url": "https://imaginecup.microsoft.com"
+  },
+  {
+    "name": "Young Writers Award",
+    "description": "Creative writing competitions.",
+    "age": "8-18",
+    "type": "Free",
+    "url": "https://youngwriters.co.uk"
+  },
+  {
+    "name": "National Cyber Olympiad",
+    "description": "Computer and IT competition.",
+    "age": "10-18",
+    "type": "Paid",
+    "url": "https://sofworld.org/nco"
+  },
+  {
+    "name": "Google Code-in (Archive)",
+    "description": "Open source coding competition.",
+    "age": "13-18",
+    "type": "Free",
+    "url": "https://opensource.google"
+  },
+  {
+    "name": "Math Kangaroo",
+    "description": "International math contest.",
+    "age": "8-18",
+    "type": "Paid",
+    "url": "https://mathkangaroo.org"
+  }
+]
