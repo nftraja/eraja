@@ -1,0 +1,30 @@
+[
+  {
+    "name": "GoNoodle",
+    "description": "Movement and fitness videos for kids.",
+    "ageGroup": "5-12",
+    "type": "Fitness",
+    "link": "https://www.gonoodle.com"
+  },
+  {
+    "name": "Nike Training Club",
+    "description": "Workout and fitness training programs.",
+    "ageGroup": "13-18",
+    "type": "Fitness",
+    "link": "https://www.nike.com/ntc-app"
+  },
+  {
+    "name": "FIFA Training Centre",
+    "description": "Football training and educational resources.",
+    "ageGroup": "8-18",
+    "type": "Sports Training",
+    "link": "https://www.fifatrainingcentre.com"
+  },
+  {
+    "name": "Junior NBA",
+    "description": "Basketball learning programs for youth.",
+    "ageGroup": "8-16",
+    "type": "Sports Training",
+    "link": "https://jr.nba.com"
+  }
+]
