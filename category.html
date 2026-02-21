@@ -1,69 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ERaja – Kids Learning Internet Directory</title>
-<link rel="stylesheet" href="assets/css/core.css">
+  <meta charset="UTF-8">
+  <title>ERaja – Categories</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/core.css">
 </head>
-
 <body>
 
-<!-- =========================
-     APP HEADER
-========================== -->
-<header class="app-header">
-    <div class="drawer-toggle">☰</div>
-    <div class="app-title">ERaja</div>
-</header>
+<!-- ================= HEADER ================= -->
+<div class="app-header">
+  <div class="menu-btn" onclick="toggleDrawer()">☰</div>
+  <h2>ERaja</h2>
+</div>
 
-<!-- =========================
-     SIDE DRAWER
-========================== -->
-<nav class="app-drawer">
-    <div class="drawer-header">Explore Categories</div>
-    <button class="platform-filter active" data-category="all">All</button>
-    <button class="platform-filter" data-category="learning">Learning</button>
-    <button class="platform-filter" data-category="coding">Coding</button>
-    <button class="platform-filter" data-category="creative">Creative</button>
-    <button class="platform-filter" data-category="sports">Sports</button>
-    <button class="platform-filter" data-category="career">Career</button>
-    <button class="platform-filter" data-category="tools">Tools</button>
-</nav>
+<!-- ================= DRAWER ================= -->
+<div class="drawer" id="drawer">
+  <h3>ERaja</h3>
+  <a href="index.html">Home</a>
+  <a href="#" onclick="setModeAndGo('kids')">Kids Mode</a>
+  <a href="#" onclick="setModeAndGo('teacher')">Teacher Mode</a>
+  <a href="#" onclick="setModeAndGo('parent')">Parent Mode</a>
+</div>
 
-<!-- =========================
-     MAIN CONTENT
-========================== -->
-<main class="app-main">
+<div class="overlay" id="overlay" onclick="closeDrawer()"></div>
 
-    <!-- CATEGORY FILTER BAR -->
-    <div class="filter-bar">
-        <button class="platform-filter active" data-category="all">All</button>
-        <button class="platform-filter" data-category="learning">Learning</button>
-        <button class="platform-filter" data-category="coding">Coding</button>
-        <button class="platform-filter" data-category="creative">Creative</button>
-        <button class="platform-filter" data-category="sports">Sports</button>
-        <button class="platform-filter" data-category="career">Career</button>
-        <button class="platform-filter" data-category="tools">Tools</button>
-    </div>
+<!-- ================= MAIN ================= -->
+<div class="container">
 
-    <!-- PLATFORM GRID -->
-    <div class="platform-grid"></div>
+  <!-- Dynamic Categories -->
+  <div id="categoryContainer" class="grid"></div>
 
-</main>
+  <!-- Dynamic Platforms -->
+  <div id="platformContainer" class="grid"></div>
 
-<!-- =========================
-     BOTTOM NAVIGATION
-========================== -->
-<nav class="bottom-nav">
-    <a href="#" class="active">Home</a>
-    <a href="#">Categories</a>
-    <a href="#">About</a>
-</nav>
+</div>
 
-<!-- =========================
-     JS
-========================== -->
+<!-- ================= FOOTER NAV ================= -->
+<div class="app-footer-nav">
+  <a href="index.html" class="footer-item">
+    <span>🏠</span>
+    Home
+  </a>
+  <a href="https://www.nftraja.com/p/qbank.html" class="footer-item">
+    <span>📘</span>
+    QBank
+  </a>
+  <a href="https://www.nftraja.com/p/toolraja.html" class="footer-item">
+    <span>🛠</span>
+    ToolRaja
+  </a>
+  <a href="https://www.nftraja.com" class="footer-item">
+    <span>🌐</span>
+    NFTRaja
+  </a>
+</div>
+
+<!-- ================= SCRIPT ================= -->
 <script src="assets/js/app.js"></script>
 
 </body>
