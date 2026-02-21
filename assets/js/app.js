@@ -1,101 +1,155 @@
-/* =========================================
-   ERaja – Complete App Controller
-   Drawer + Category Engine + Filters
-========================================= */
+/* =====================================================
+   ERaja – Directory Engine (FINAL)
+   Single JSON Driven System
+   ===================================================== */
 
-/* ========= DRAWER CONTROL ========= */
-function toggleDrawer(){
-  const drawer = document.getElementById("drawer");
-  const overlay = document.getElementById("overlay");
+const ERajaApp = (() => {
 
-  if(drawer && overlay){
-    drawer.classList.toggle("active");
-    overlay.classList.toggle("active");
-  }
-}
+    /* -------------------------------
+       STATE
+    ---------------------------------*/
+    let platforms = [];
+    let activeCategory = "all";
 
-function closeDrawer(){
-  const drawer = document.getElementById("drawer");
-  const overlay = document.getElementById("overlay");
-
-  if(drawer && overlay){
-    drawer.classList.remove("active");
-    overlay.classList.remove("active");
-  }
-}
-
-/* ========= URL PARAM HELPER ========= */
-function getQueryParam(param){
-  const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get(param);
-}
-
-/* ========= CATEGORY LOADER ========= */
-async function loadCategory(){
-  const type = getQueryParam("type");
-  if(!type) return;
-
-  const container = document.getElementById("category-container");
-  const title = document.getElementById("category-title");
-  const filterSelect = document.getElementById("filter-select");
-
-  if(!container) return;
-
-  title.innerText = type.charAt(0).toUpperCase() + type.slice(1);
-
-  try{
-    const response = await fetch(`data/${type}.json`);
-    const data = await response.json();
-
-    renderCards(data);
-
-    if(filterSelect){
-      filterSelect.addEventListener("change", function(){
-        const value = this.value;
-        if(value === "All"){
-          renderCards(data);
-        }else{
-          const filtered = data.filter(item => item.type === value);
-          renderCards(filtered);
+    /* -------------------------------
+       INIT
+    ---------------------------------*/
+    const init = async () => {
+        try {
+            await loadPlatforms();
+            setupFilters();
+            setupDrawer();
+            setupBottomNav();
+            renderPlatforms();
+        } catch (err) {
+            console.error("ERaja Init Error:", err);
         }
-      });
-    }
+    };
 
-  }catch(error){
-    container.innerHTML = "<p>Data not available.</p>";
-  }
-}
+    /* -------------------------------
+       LOAD JSON
+    ---------------------------------*/
+    const loadPlatforms = async () => {
+        const response = await fetch("data/platforms.json");
+        if (!response.ok) throw new Error("JSON load failed");
+        platforms = await response.json();
+    };
 
-/* ========= CARD RENDER ========= */
-function renderCards(data){
-  const container = document.getElementById("category-container");
-  if(!container) return;
+    /* -------------------------------
+       RENDER
+    ---------------------------------*/
+    const renderPlatforms = () => {
 
-  container.innerHTML = "";
+        const grid = document.querySelector(".platform-grid");
+        if (!grid) return;
 
-  if(data.length === 0){
-    container.innerHTML = "<p>No platforms found.</p>";
-    return;
-  }
+        grid.innerHTML = "";
 
-  data.forEach(item => {
-    const card = document.createElement("div");
-    card.className = "card";
+        const filtered = activeCategory === "all"
+            ? platforms
+            : platforms.filter(p => p.category === activeCategory);
 
-    card.innerHTML = `
-      <h3>${item.name}</h3>
-      <p>${item.description}</p>
-      <p style="font-size:12px;color:#94a3b8;margin-bottom:10px;">
-        Age: ${item.age} | Type: ${item.type}
-      </p>
-      <a href="${item.url}" target="_blank" class="btn">Visit Platform</a>
-    `;
+        if (filtered.length === 0) {
+            grid.innerHTML = `
+                <div class="empty-state">
+                    No platforms found for this category.
+                </div>
+            `;
+            return;
+        }
 
-    container.appendChild(card);
-  });
-}
+        filtered.forEach(platform => {
+            const card = createCard(platform);
+            grid.appendChild(card);
+        });
+    };
 
-/* ========= AUTO INIT ========= */
-document.addEventListener("DOMContentLoaded", function(){
-  loadCategory();
+    /* -------------------------------
+       CARD CREATOR
+    ---------------------------------*/
+    const createCard = (platform) => {
+
+        const card = document.createElement("div");
+        card.className = "platform-card";
+
+        card.innerHTML = `
+            <div class="platform-title">${platform.name}</div>
+            <div class="platform-desc">${platform.description}</div>
+            <div class="platform-meta">
+                <span>Age: ${platform.age}</span>
+                <span>${platform.type}</span>
+            </div>
+            <a href="${platform.url}" target="_blank" 
+               rel="noopener noreferrer" 
+               class="platform-btn">
+               Visit Platform
+            </a>
+        `;
+
+        return card;
+    };
+
+    /* -------------------------------
+       FILTER SYSTEM
+    ---------------------------------*/
+    const setupFilters = () => {
+
+        const filters = document.querySelectorAll(".platform-filter");
+
+        filters.forEach(button => {
+            button.addEventListener("click", () => {
+
+                filters.forEach(btn => btn.classList.remove("active"));
+                button.classList.add("active");
+
+                activeCategory = button.dataset.category;
+                renderPlatforms();
+            });
+        });
+    };
+
+    /* -------------------------------
+       DRAWER SYSTEM
+    ---------------------------------*/
+    const setupDrawer = () => {
+
+        const toggle = document.querySelector(".drawer-toggle");
+        const drawer = document.querySelector(".app-drawer");
+
+        if (!toggle || !drawer) return;
+
+        toggle.addEventListener("click", () => {
+            drawer.classList.toggle("open");
+        });
+    };
+
+    /* -------------------------------
+       BOTTOM NAV ACTIVE
+    ---------------------------------*/
+    const setupBottomNav = () => {
+
+        const navItems = document.querySelectorAll(".bottom-nav a");
+
+        navItems.forEach(item => {
+            item.addEventListener("click", () => {
+                navItems.forEach(i => i.classList.remove("active"));
+                item.classList.add("active");
+            });
+        });
+    };
+
+    /* -------------------------------
+       PUBLIC API
+    ---------------------------------*/
+    return {
+        init
+    };
+
+})();
+
+/* -------------------------------
+   DOM READY
+---------------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+    ERajaApp.init();
 });
