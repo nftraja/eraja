@@ -1,62 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>ERaja – Categories</title>
+  <title>ERaja Directory</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/core.css">
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- HEADER -->
 <div class="app-header">
   <div class="menu-btn" onclick="toggleDrawer()">☰</div>
   <h2>ERaja</h2>
 </div>
 
-<!-- ================= DRAWER ================= -->
+<!-- SIDE DRAWER -->
 <div class="drawer" id="drawer">
-  <h3>ERaja</h3>
+  <h3>Navigation</h3>
   <a href="index.html">Home</a>
-  <a href="#" onclick="setModeAndGo('kids')">Kids Mode</a>
-  <a href="#" onclick="setModeAndGo('teacher')">Teacher Mode</a>
-  <a href="#" onclick="setModeAndGo('parent')">Parent Mode</a>
+  <a href="#">QBank</a>
+  <a href="#">ToolRaja</a>
+  <a href="#">NFTRaja</a>
 </div>
 
 <div class="overlay" id="overlay" onclick="closeDrawer()"></div>
 
-<!-- ================= MAIN ================= -->
+<!-- MAIN CONTAINER -->
 <div class="container">
 
-  <!-- Dynamic Categories -->
+  <!-- CATEGORY CONTAINER -->
   <div id="categoryContainer" class="grid"></div>
 
-  <!-- Dynamic Platforms -->
+  <!-- PLATFORM CONTAINER -->
   <div id="platformContainer" class="grid"></div>
 
 </div>
 
-<!-- ================= FOOTER NAV ================= -->
-<div class="app-footer-nav">
-  <a href="index.html" class="footer-item">
-    <span>🏠</span>
-    Home
-  </a>
-  <a href="https://www.nftraja.com/p/qbank.html" class="footer-item">
-    <span>📘</span>
-    QBank
-  </a>
-  <a href="https://www.nftraja.com/p/toolraja.html" class="footer-item">
-    <span>🛠</span>
-    ToolRaja
-  </a>
-  <a href="https://www.nftraja.com" class="footer-item">
-    <span>🌐</span>
-    NFTRaja
-  </a>
+<!-- BOTTOM NAV -->
+<div class="bottom-nav">
+  <a href="index.html">🏠 Home</a>
+  <a href="#">📘 QBank</a>
+  <a href="#">🛠 ToolRaja</a>
+  <a href="#">🌐 NFTRaja</a>
 </div>
 
-<!-- ================= SCRIPT ================= -->
 <script src="assets/js/app.js"></script>
 
 </body>
