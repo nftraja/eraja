@@ -1,87 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ERaja – Kids Learning Internet Directory</title>
+  <title>ERaja – Kids Internet Directory</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/core.css">
 </head>
 <body>
 
+<!-- HEADER -->
+<div class="app-header">
+  <div class="menu-btn" onclick="toggleDrawer()">☰</div>
+  <h2>ERaja</h2>
+</div>
+
+<!-- DRAWER -->
+<div class="drawer" id="drawer">
+  <h3>Categories</h3>
+  <a href="category.html?type=learning">Learning</a>
+  <a href="category.html?type=coding">Coding</a>
+  <a href="category.html?type=creative">Creative</a>
+  <a href="category.html?type=sports">Sports</a>
+  <a href="category.html?type=govt">Govt</a>
+  <a href="category.html?type=career">Career</a>
+  <a href="category.html?type=competitions">Competitions</a>
+  <a href="category.html?type=tools">Tools</a>
+  <a href="category.html?type=safety">Safety</a>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+
+<!-- MAIN -->
 <div class="container">
 
   <div class="hero">
-    <h1>ERaja – Kids & Youth Internet Directory</h1>
+    <h1>Kids & Youth Internet Directory</h1>
     <p>Structured internet world for learning, growth and exploration.</p>
   </div>
 
   <div class="grid">
 
     <div class="card">
-      <span class="badge">Academics</span>
       <h3>Learning Platforms</h3>
-      <p>Structured academic learning websites and educational apps.</p>
-      <a href="category.html?type=learning">Explore →</a>
+      <p>Structured academic websites and apps.</p>
+      <a href="category.html?type=learning" class="btn">Explore</a>
     </div>
 
     <div class="card">
-      <span class="badge">STEM</span>
       <h3>Coding & STEM</h3>
-      <p>Programming, robotics and science exploration platforms.</p>
-      <a href="category.html?type=coding">Explore →</a>
+      <p>Programming, robotics and science platforms.</p>
+      <a href="category.html?type=coding" class="btn">Explore</a>
     </div>
 
     <div class="card">
-      <span class="badge">Creativity</span>
       <h3>Creative Arts</h3>
-      <p>Art, music, animation and storytelling tools.</p>
-      <a href="category.html?type=creative">Explore →</a>
+      <p>Art, animation and storytelling tools.</p>
+      <a href="category.html?type=creative" class="btn">Explore</a>
     </div>
 
     <div class="card">
-      <span class="badge">Fitness</span>
       <h3>Sports & Fitness</h3>
-      <p>Physical training and youth sports development.</p>
-      <a href="category.html?type=sports">Explore →</a>
+      <p>Youth sports and fitness development.</p>
+      <a href="category.html?type=sports" class="btn">Explore</a>
     </div>
 
     <div class="card">
-      <span class="badge">Government</span>
       <h3>Govt & Scholarships</h3>
-      <p>Official education schemes and student support portals.</p>
-      <a href="category.html?type=govt">Explore →</a>
-    </div>
-
-    <div class="card">
-      <span class="badge">Career</span>
-      <h3>Career Exposure</h3>
-      <p>Career exploration and skill development platforms.</p>
-      <a href="category.html?type=career">Explore →</a>
-    </div>
-
-    <div class="card">
-      <span class="badge">Competitions</span>
-      <h3>Olympiads & Contests</h3>
-      <p>Hackathons, quizzes and academic competitions.</p>
-      <a href="category.html?type=competitions">Explore →</a>
-    </div>
-
-    <div class="card">
-      <span class="badge">Tools</span>
-      <h3>Student Tools</h3>
-      <p>Productivity, design and academic tools.</p>
-      <a href="category.html?type=tools">Explore →</a>
-    </div>
-
-    <div class="card">
-      <span class="badge">Safety</span>
-      <h3>Internet Safety</h3>
-      <p>Digital wellbeing and cyber safety resources.</p>
-      <a href="category.html?type=safety">Explore →</a>
+      <p>Official education schemes and portals.</p>
+      <a href="category.html?type=govt" class="btn">Explore</a>
     </div>
 
   </div>
 
 </div>
 
+<!-- FOOTER -->
+<div class="app-footer">
+  © 2026 ERaja – Structured Youth Internet Directory
+</div>
+
+<script src="assets/js/app.js"></script>
 </body>
 </html>
