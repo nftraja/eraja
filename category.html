@@ -1,65 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>ERaja Category</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/core.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ERaja – Kids Learning Internet Directory</title>
+<link rel="stylesheet" href="assets/css/core.css">
 </head>
+
 <body>
 
-<!-- HEADER -->
-<div class="app-header">
-  <div class="menu-btn" onclick="toggleDrawer()">☰</div>
-  <h2 id="category-title">Category</h2>
-</div>
+<!-- =========================
+     APP HEADER
+========================== -->
+<header class="app-header">
+    <div class="drawer-toggle">☰</div>
+    <div class="app-title">ERaja</div>
+</header>
 
-<!-- DRAWER -->
-<div class="drawer" id="drawer">
-  <h3>Categories</h3>
-  <a href="index.html">Home</a>
-  <a href="category.html?type=learning">Learning</a>
-  <a href="category.html?type=coding">Coding</a>
-  <a href="category.html?type=creative">Creative</a>
-  <a href="category.html?type=sports">Sports</a>
-  <a href="category.html?type=govt">Govt</a>
-  <a href="category.html?type=career">Career</a>
-  <a href="category.html?type=competitions">Competitions</a>
-  <a href="category.html?type=tools">Tools</a>
-  <a href="category.html?type=safety">Safety</a>
-</div>
+<!-- =========================
+     SIDE DRAWER
+========================== -->
+<nav class="app-drawer">
+    <div class="drawer-header">Explore Categories</div>
+    <button class="platform-filter active" data-category="all">All</button>
+    <button class="platform-filter" data-category="learning">Learning</button>
+    <button class="platform-filter" data-category="coding">Coding</button>
+    <button class="platform-filter" data-category="creative">Creative</button>
+    <button class="platform-filter" data-category="sports">Sports</button>
+    <button class="platform-filter" data-category="career">Career</button>
+    <button class="platform-filter" data-category="tools">Tools</button>
+</nav>
 
-<div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+<!-- =========================
+     MAIN CONTENT
+========================== -->
+<main class="app-main">
 
-<!-- MAIN CONTENT -->
-<div class="container">
+    <!-- CATEGORY FILTER BAR -->
+    <div class="filter-bar">
+        <button class="platform-filter active" data-category="all">All</button>
+        <button class="platform-filter" data-category="learning">Learning</button>
+        <button class="platform-filter" data-category="coding">Coding</button>
+        <button class="platform-filter" data-category="creative">Creative</button>
+        <button class="platform-filter" data-category="sports">Sports</button>
+        <button class="platform-filter" data-category="career">Career</button>
+        <button class="platform-filter" data-category="tools">Tools</button>
+    </div>
 
-  <!-- FILTER BAR -->
-  <div style="margin-bottom:20px;">
-    <select id="filter-select" style="
-      width:100%;
-      padding:10px;
-      border-radius:8px;
-      border:none;
-      background:#1e293b;
-      color:#e2e8f0;
-    ">
-      <option>All</option>
-      <option>Free</option>
-      <option>Freemium</option>
-      <option>Paid</option>
-    </select>
-  </div>
+    <!-- PLATFORM GRID -->
+    <div class="platform-grid"></div>
 
-  <!-- CATEGORY GRID -->
-  <div id="category-container" class="grid"></div>
+</main>
 
-</div>
+<!-- =========================
+     BOTTOM NAVIGATION
+========================== -->
+<nav class="bottom-nav">
+    <a href="#" class="active">Home</a>
+    <a href="#">Categories</a>
+    <a href="#">About</a>
+</nav>
 
-<!-- FOOTER -->
-<div class="app-footer">
-  © 2026 ERaja – Structured Youth Internet Directory
-</div>
-
+<!-- =========================
+     JS
+========================== -->
 <script src="assets/js/app.js"></script>
+
 </body>
 </html>
