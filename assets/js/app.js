@@ -1,12 +1,14 @@
-/* ===============================
-   ERaja FINAL App Logic
-   =============================== */
+/* =========================================
+   ERaja FINAL ENGINE
+   3 Modes | 30 Categories | 300 Platforms
+   Data Driven | Flat JSON
+========================================= */
 
 const DATA_PATH = "data/platforms.json";
 
-/* ===============================
+/* =========================================
    Drawer Control
-   =============================== */
+========================================= */
 
 function toggleDrawer() {
   document.getElementById("drawer").classList.toggle("active");
@@ -18,9 +20,9 @@ function closeDrawer() {
   document.getElementById("overlay").classList.remove("active");
 }
 
-/* ===============================
+/* =========================================
    Mode Handling
-   =============================== */
+========================================= */
 
 function setModeAndGo(mode) {
   localStorage.setItem("eraja_mode", mode);
@@ -31,25 +33,25 @@ function getMode() {
   return localStorage.getItem("eraja_mode");
 }
 
-/* ===============================
-   Page Detection
-   =============================== */
+/* =========================================
+   App Boot
+========================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  const currentPage = window.location.pathname.split("/").pop();
+  const page = window.location.pathname.split("/").pop();
 
-  if (currentPage === "category.html") {
-    loadCategories();
+  if (page === "category.html") {
+    initializeCategoryPage();
   }
 
 });
 
-/* ===============================
-   Load Categories
-   =============================== */
+/* =========================================
+   Initialize Category Page
+========================================= */
 
-async function loadCategories() {
+async function initializeCategoryPage() {
 
   const mode = getMode();
 
@@ -61,122 +63,111 @@ async function loadCategories() {
   try {
 
     const response = await fetch(DATA_PATH);
-    const platforms = await response.json();
+    const allPlatforms = await response.json();
 
-    const container = document.getElementById("categoryContainer");
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedCategory = urlParams.get("cat");
 
-    if (!container) return;
-
-    const categories = extractCategories(platforms);
-
-    container.innerHTML = "";
-
-    categories.forEach(cat => {
-
-      const count = platforms.filter(p => p.category === cat).length;
-
-      const card = document.createElement("div");
-      card.className = "card";
-      card.innerHTML = `
-        <h3>${formatCategory(cat)}</h3>
-        <p>${count} curated platforms available.</p>
-        <button class="btn" onclick="openCategory('${cat}')">Explore</button>
-      `;
-
-      container.appendChild(card);
-
-    });
+    if (!selectedCategory) {
+      renderCategories(allPlatforms, mode);
+    } else {
+      renderPlatforms(allPlatforms, mode, selectedCategory);
+    }
 
   } catch (error) {
-    console.error("Category Load Error:", error);
+    console.error("Initialization Error:", error);
   }
 
 }
 
-/* ===============================
-   Extract Unique Categories
-   =============================== */
+/* =========================================
+   Render Categories (Mode Based)
+========================================= */
 
-function extractCategories(platforms) {
+function renderCategories(platforms, mode) {
 
-  const unique = [...new Set(platforms.map(p => p.category))];
+  const container = document.getElementById("categoryContainer");
+  const platformContainer = document.getElementById("platformContainer");
 
-  return unique.sort();
+  if (!container) return;
+
+  container.innerHTML = "";
+  if (platformContainer) platformContainer.innerHTML = "";
+
+  const modePlatforms = platforms.filter(p => p.mode === mode);
+
+  const categoryMap = {};
+
+  modePlatforms.forEach(p => {
+    if (!categoryMap[p.category]) {
+      categoryMap[p.category] = {
+        title: p.categoryTitle,
+        count: 0
+      };
+    }
+    categoryMap[p.category].count++;
+  });
+
+  Object.keys(categoryMap).forEach(categorySlug => {
+
+    const card = document.createElement("div");
+    card.className = "card";
+
+    card.innerHTML = `
+      <h3>${categoryMap[categorySlug].title}</h3>
+      <p>${categoryMap[categorySlug].count} curated platforms available.</p>
+      <button class="btn" onclick="openCategory('${categorySlug}')">Explore</button>
+    `;
+
+    container.appendChild(card);
+
+  });
 
 }
 
-/* ===============================
-   Format Category Name
-   =============================== */
+/* =========================================
+   Render Platforms (Mode + Category)
+========================================= */
 
-function formatCategory(slug) {
+function renderPlatforms(platforms, mode, category) {
 
-  return slug
-    .replace(/-/g, " ")
-    .replace(/\b\w/g, char => char.toUpperCase());
+  const container = document.getElementById("platformContainer");
+  const categoryContainer = document.getElementById("categoryContainer");
+
+  if (!container) return;
+
+  if (categoryContainer) categoryContainer.innerHTML = "";
+  container.innerHTML = "";
+
+  const filtered = platforms.filter(p =>
+    p.mode === mode && p.category === category
+  );
+
+  filtered.forEach(p => {
+
+    const card = document.createElement("div");
+    card.className = "card";
+
+    card.innerHTML = `
+      <h3>${p.name}</h3>
+      <div class="meta-row">
+        <div class="badge">${p.age}</div>
+        <div class="badge">${p.type}</div>
+      </div>
+      <p>${p.description}</p>
+      <a href="${p.url}" target="_blank" class="btn">Visit Platform</a>
+    `;
+
+    container.appendChild(card);
+
+  });
 
 }
 
-/* ===============================
-   Open Category Page
-   =============================== */
+/* =========================================
+   Category Navigation
+========================================= */
 
 function openCategory(category) {
   window.location.href = `category.html?cat=${category}`;
 }
-
-/* ===============================
-   Load Platforms by Category
-   =============================== */
-
-async function loadPlatformsByCategory() {
-
-  const urlParams = new URLSearchParams(window.location.search);
-  const category = urlParams.get("cat");
-
-  if (!category) return;
-
-  try {
-
-    const response = await fetch(DATA_PATH);
-    const platforms = await response.json();
-
-    const filtered = platforms.filter(p => p.category === category);
-
-    const container = document.getElementById("platformContainer");
-
-    if (!container) return;
-
-    container.innerHTML = "";
-
-    filtered.forEach(p => {
-
-      const card = document.createElement("div");
-      card.className = "card";
-      card.innerHTML = `
-        <h3>${p.name}</h3>
-        <p>${p.description}</p>
-        <a href="${p.url}" target="_blank" class="btn">Visit</a>
-      `;
-
-      container.appendChild(card);
-
-    });
-
-  } catch (error) {
-    console.error("Platform Load Error:", error);
-  }
-
-}
-
-/* ===============================
-   Auto Detect Platform Section
-   =============================== */
-
-document.addEventListener("DOMContentLoaded", () => {
-
-  if (document.getElementById("platformContainer")) {
-    loadPlatformsByCategory();
-  }
-
-});
