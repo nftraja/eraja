@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Scratch",
+    "description": "Block-based coding platform for beginners.",
+    "ageGroup": "6-14",
+    "type": "Coding",
+    "link": "https://scratch.mit.edu"
+  },
+  {
+    "name": "Code.org",
+    "description": "Interactive coding lessons and computer science courses.",
+    "ageGroup": "6-18",
+    "type": "Coding",
+    "link": "https://code.org"
+  },
+  {
+    "name": "Tynker",
+    "description": "Coding and game development for kids.",
+    "ageGroup": "7-16",
+    "type": "Coding",
+    "link": "https://www.tynker.com"
+  },
+  {
+    "name": "Blockly Games",
+    "description": "Educational games that teach programming concepts.",
+    "ageGroup": "8-14",
+    "type": "Coding",
+    "link": "https://blockly.games"
+  }
+]
