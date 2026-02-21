@@ -1,67 +1,160 @@
-/* =========================================
-   ERaja – Core App Style (FINAL LOCKED)
-   Compact App Layout – No Future Changes
-========================================= */
+/* =====================================
+   ERAJA – FINAL CORE.CSS (LOCKED)
+   Compact App Layout | 3D Cards
+===================================== */
 
-/* ---------- RESET ---------- */
+/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
 }
 
 html, body {
   height: 100%;
-}
-
-body {
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0f1117;
+  color: #f5f7fa;
   overflow-x: hidden;
 }
 
-/* ---------- HEADER ---------- */
+/* ===== APP HEADER ===== */
 .app-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 56px;
-  background: rgba(15, 23, 42, 0.95);
-  backdrop-filter: blur(8px);
+  background: #151923;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 14px;
+  padding: 0 16px;
   z-index: 1000;
   border-bottom: 1px solid rgba(255,255,255,0.05);
-}
-
-.app-header h2 {
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
 }
 
 .menu-btn {
   font-size: 20px;
   cursor: pointer;
+  margin-right: 12px;
 }
 
-/* ---------- DRAWER ---------- */
+.app-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  padding: 70px 14px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== HERO CARD ===== */
+.hero-card {
+  background: linear-gradient(135deg, #1d2333, #11151f);
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.hero-card h1 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.hero-card p {
+  font-size: 14px;
+  color: #cbd3e1;
+  line-height: 1.4;
+}
+
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.mode-grid {
+  margin-top: 10px;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: linear-gradient(145deg, #1a1f2b, #121622);
+  padding: 14px;
+  border-radius: 14px;
+  box-shadow: 
+    0 6px 15px rgba(0,0,0,0.5),
+    inset 0 1px 0 rgba(255,255,255,0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+.card h3 {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 13px;
+  color: #c2c8d6;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 13px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #5c7cff, #3b4ef8);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* ===== BADGES ===== */
+.meta-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: #242a3a;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 11px;
+  color: #d0d6e5;
+}
+
+/* ===== DRAWER ===== */
 .drawer {
   position: fixed;
-  left: -250px;
   top: 0;
-  width: 250px;
+  left: -260px;
+  width: 240px;
   height: 100%;
-  background: #111827;
-  padding: 70px 18px 18px;
-  transition: 0.3s ease;
-  z-index: 1100;
+  background: #151923;
+  padding: 60px 16px 16px;
+  transition: left 0.3s ease;
+  z-index: 1200;
 }
 
 .drawer.active {
@@ -69,195 +162,69 @@ body {
 }
 
 .drawer h3 {
+  font-size: 14px;
   margin-bottom: 10px;
-  font-size: 16px;
-  color: #38bdf8;
+  color: #aab2c5;
 }
 
 .drawer a {
   display: block;
   padding: 8px 0;
-  font-size: 13px;
-  color: #cbd5e1;
+  font-size: 14px;
+  color: #e4e8f1;
   text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,0.04);
 }
 
 .drawer a:hover {
-  color: #ffffff;
+  color: #5c7cff;
 }
 
+/* ===== OVERLAY ===== */
 .overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: rgba(0,0,0,0.5);
-  display: none;
-  z-index: 1050;
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 1100;
 }
 
 .overlay.active {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
-/* ---------- MAIN CONTAINER ---------- */
-.container {
-  margin-top: 70px; /* header space */
-  padding: 16px;
-  padding-bottom: 85px; /* footer space */
-  width: 100%;
-}
-
-/* ---------- HERO ---------- */
-.hero {
-  text-align: center;
-  margin-bottom: 22px;
-}
-
-.hero h1 {
-  font-size: 20px;
-  margin-bottom: 6px;
-}
-
-.hero p {
-  font-size: 13px;
-  color: #94a3b8;
-  line-height: 1.4;
-}
-
-/* ---------- GRID ---------- */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 12px;
-}
-
-/* ---------- CARD (3D Compact) ---------- */
-.card {
-  background: linear-gradient(145deg, #1e293b, #0f172a);
-  border-radius: 14px;
-  padding: 14px;
-  box-shadow: 6px 6px 14px rgba(0,0,0,0.6),
-              -3px -3px 8px rgba(255,255,255,0.03);
-  transition: 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 8px 8px 18px rgba(0,0,0,0.7),
-              -3px -3px 10px rgba(255,255,255,0.04);
-}
-
-.card h3 {
-  font-size: 14px;
-  margin-bottom: 6px;
-}
-
-.card p {
-  font-size: 12px;
-  color: #cbd5e1;
-  line-height: 1.4;
-  margin-bottom: 8px;
-}
-
-/* ---------- MODE CARD ---------- */
-.mode-card {
-  background: linear-gradient(145deg, #1f2937, #111827);
-  border-radius: 16px;
-  padding: 18px;
-  text-align: center;
-  box-shadow: 8px 8px 18px rgba(0,0,0,0.7);
-  cursor: pointer;
-  transition: 0.25s ease;
-}
-
-.mode-card:hover {
-  transform: translateY(-4px);
-}
-
-.mode-card h3 {
-  font-size: 16px;
-  margin-top: 6px;
-}
-
-.mode-card p {
-  font-size: 12px;
-  color: #94a3b8;
-  margin-top: 4px;
-}
-
-/* ---------- BUTTON ---------- */
-.btn {
-  display: inline-block;
-  padding: 6px 12px;
-  background: linear-gradient(90deg, #3b82f6, #06b6d4);
-  color: #ffffff;
-  font-size: 11px;
-  border-radius: 6px;
-  text-decoration: none;
-  text-align: center;
-  transition: 0.2s ease;
-}
-
-.btn:hover {
-  opacity: 0.85;
-}
-
-/* ---------- META BADGE SYSTEM ---------- */
-.meta-row {
-  display: flex;
-  gap: 6px;
-  margin-bottom: 6px;
-  flex-wrap: wrap;
-}
-
-.badge {
-  font-size: 10px;
-  padding: 3px 6px;
-  border-radius: 6px;
-  background: rgba(255,255,255,0.08);
-  color: #e2e8f0;
-}
-
-/* ---------- FOOTER NAV ---------- */
-.app-footer-nav {
+/* ===== BOTTOM NAV ===== */
+.bottom-nav {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
-  height: 60px;
-  background: rgba(15,23,42,0.95);
-  backdrop-filter: blur(6px);
+  height: 56px;
+  background: #151923;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-top: 1px solid rgba(255,255,255,0.05);
-  z-index: 1200;
+  z-index: 1000;
 }
 
-.footer-item {
-  text-align: center;
-  font-size: 10px;
-  color: #94a3b8;
+.bottom-nav a {
+  font-size: 13px;
   text-decoration: none;
+  color: #cbd3e1;
+  text-align: center;
 }
 
-.footer-item span {
-  display: block;
-  font-size: 18px;
+.bottom-nav a:hover {
+  color: #5c7cff;
 }
 
-.footer-item:hover {
-  color: #ffffff;
-}
-
-/* ---------- RESPONSIVE ---------- */
-@media (max-width: 480px) {
-  .hero h1 {
-    font-size: 18px;
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   }
 }
