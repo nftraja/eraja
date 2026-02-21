@@ -4,11 +4,44 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ERaja – Kids & Youth Internet Directory</title>
+<meta name="description" content="Structured directory of safe and useful platforms for kids and teens including learning, coding, creativity, sports, government and career resources.">
+<link rel="stylesheet" href="assets/css/core.css">
 </head>
 <body>
 
-<h1>ERaja – Kids & Youth Internet Directory</h1>
-<p>Main Directory Hub</p>
+<div class="container">
+
+<header class="header">
+  <h1>ERaja – Kids & Youth Internet Directory</h1>
+  <p>Structured internet world for learning, growth and exploration.</p>
+</header>
+
+<section class="category-grid" id="category-grid">
+</section>
+
+<footer class="footer">
+  © 2026 ERaja | Built for Young Minds
+</footer>
+
+</div>
+
+<script>
+fetch("data/categories.json")
+.then(res => res.json())
+.then(categories => {
+  const grid = document.getElementById("category-grid");
+  categories.forEach(cat => {
+    const card = document.createElement("div");
+    card.className = "category-card";
+    card.innerHTML = `
+      <h3>${cat.name}</h3>
+      <p>${cat.description}</p>
+      <a href="category.html?cat=${cat.id}">Explore →</a>
+    `;
+    grid.appendChild(card);
+  });
+});
+</script>
 
 </body>
 </html>
