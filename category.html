@@ -4,27 +4,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Category – ERaja</title>
+<meta name="description" content="Explore curated platforms for kids and youth learning, skills and growth.">
 <link rel="stylesheet" href="assets/css/core.css">
 </head>
+
 <body>
 
 <div class="container">
 
+<!-- HEADER -->
 <header>
-  <h1 id="category-title"></h1>
+  <a href="index.html" class="button" style="margin-bottom:20px; display:inline-block;">← Back to Home</a>
+  <h1 id="category-title">Loading...</h1>
   <p id="category-desc"></p>
 </header>
 
+<!-- FILTERS -->
 <div class="filters" id="filters"></div>
 
+<!-- PLATFORM GRID -->
 <section class="grid grid-3" id="platform-grid"></section>
 
+<!-- EMPTY STATE -->
+<div id="empty-state" style="display:none; margin-top:20px;">
+  <p>No platforms available in this category yet.</p>
+</div>
+
+<!-- FOOTER -->
 <footer>
-  © 2026 ERaja Directory
+  © 2026 ERaja – Kids Learning Internet Directory
 </footer>
 
 </div>
 
 <script src="assets/js/directory-engine.js"></script>
+
 </body>
 </html>
