@@ -1,43 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Category – ERaja</title>
-<meta name="description" content="Explore curated platforms for kids and youth learning, skills and growth.">
-<link rel="stylesheet" href="assets/css/core.css">
+  <title>ERaja Category</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/core.css">
 </head>
-
 <body>
 
+<!-- HEADER -->
+<div class="app-header">
+  <div class="menu-btn" onclick="toggleDrawer()">☰</div>
+  <h2 id="category-title">Category</h2>
+</div>
+
+<!-- DRAWER -->
+<div class="drawer" id="drawer">
+  <h3>Categories</h3>
+  <a href="index.html">Home</a>
+  <a href="category.html?type=learning">Learning</a>
+  <a href="category.html?type=coding">Coding</a>
+  <a href="category.html?type=creative">Creative</a>
+  <a href="category.html?type=sports">Sports</a>
+  <a href="category.html?type=govt">Govt</a>
+  <a href="category.html?type=career">Career</a>
+  <a href="category.html?type=competitions">Competitions</a>
+  <a href="category.html?type=tools">Tools</a>
+  <a href="category.html?type=safety">Safety</a>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+
+<!-- MAIN CONTENT -->
 <div class="container">
 
-<!-- HEADER -->
-<header>
-  <a href="index.html" class="button" style="margin-bottom:20px; display:inline-block;">← Back to Home</a>
-  <h1 id="category-title">Loading...</h1>
-  <p id="category-desc"></p>
-</header>
+  <!-- FILTER BAR -->
+  <div style="margin-bottom:20px;">
+    <select id="filter-select" style="
+      width:100%;
+      padding:10px;
+      border-radius:8px;
+      border:none;
+      background:#1e293b;
+      color:#e2e8f0;
+    ">
+      <option>All</option>
+      <option>Free</option>
+      <option>Freemium</option>
+      <option>Paid</option>
+    </select>
+  </div>
 
-<!-- FILTERS -->
-<div class="filters" id="filters"></div>
+  <!-- CATEGORY GRID -->
+  <div id="category-container" class="grid"></div>
 
-<!-- PLATFORM GRID -->
-<section class="grid grid-3" id="platform-grid"></section>
-
-<!-- EMPTY STATE -->
-<div id="empty-state" style="display:none; margin-top:20px;">
-  <p>No platforms available in this category yet.</p>
 </div>
 
 <!-- FOOTER -->
-<footer>
-  © 2026 ERaja – Kids Learning Internet Directory
-</footer>
-
+<div class="app-footer">
+  © 2026 ERaja – Structured Youth Internet Directory
 </div>
 
-<script src="assets/js/directory-engine.js"></script>
-
+<script src="assets/js/app.js"></script>
 </body>
 </html>
