@@ -1,0 +1,47 @@
+[
+  {
+    "id": "learning",
+    "name": "Learning Platforms",
+    "description": "Educational websites and apps for kids and teens."
+  },
+  {
+    "id": "coding",
+    "name": "Coding & STEM",
+    "description": "Programming, robotics and STEM learning platforms."
+  },
+  {
+    "id": "creative",
+    "name": "Creative Arts",
+    "description": "Art, music, animation and creative tools."
+  },
+  {
+    "id": "sports",
+    "name": "Sports & Physical Development",
+    "description": "Sports learning and activity platforms."
+  },
+  {
+    "id": "govt",
+    "name": "Govt & Scholarships",
+    "description": "Government schemes and scholarship resources."
+  },
+  {
+    "id": "competitions",
+    "name": "Competitions & Olympiads",
+    "description": "Academic and skill competitions."
+  },
+  {
+    "id": "tools",
+    "name": "Kids Tools",
+    "description": "Safe digital tools and productivity platforms."
+  },
+  {
+    "id": "career",
+    "name": "Career Exposure",
+    "description": "Career awareness and guidance resources."
+  },
+  {
+    "id": "safety",
+    "name": "Digital Safety",
+    "description": "Safe browsing and digital awareness platforms."
+  }
+]
