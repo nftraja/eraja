@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Khan Academy",
+    "description": "Free educational lessons for math, science and more.",
+    "ageGroup": "6-16",
+    "type": "Learning",
+    "link": "https://www.khanacademy.org"
+  },
+  {
+    "name": "National Geographic Kids",
+    "description": "Science, animals and geography learning content for kids.",
+    "ageGroup": "6-14",
+    "type": "Learning",
+    "link": "https://kids.nationalgeographic.com"
+  },
+  {
+    "name": "BBC Bitesize",
+    "description": "Curriculum based learning resources for school students.",
+    "ageGroup": "7-16",
+    "type": "Learning",
+    "link": "https://www.bbc.co.uk/bitesize"
+  },
+  {
+    "name": "Duolingo",
+    "description": "Language learning app for kids and teens.",
+    "ageGroup": "8-16",
+    "type": "Language",
+    "link": "https://www.duolingo.com"
+  }
+]
