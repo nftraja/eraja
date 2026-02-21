@@ -1,83 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>ERaja – Kids Internet Directory</title>
+  <meta charset="UTF-8">
+  <title>ERaja – Structured Youth Internet</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/core.css">
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 <div class="app-header">
   <div class="menu-btn" onclick="toggleDrawer()">☰</div>
   <h2>ERaja</h2>
 </div>
 
-<!-- DRAWER -->
+<!-- ================= DRAWER ================= -->
 <div class="drawer" id="drawer">
-  <h3>Categories</h3>
-  <a href="category.html?type=learning">Learning</a>
-  <a href="category.html?type=coding">Coding</a>
-  <a href="category.html?type=creative">Creative</a>
-  <a href="category.html?type=sports">Sports</a>
-  <a href="category.html?type=govt">Govt</a>
-  <a href="category.html?type=career">Career</a>
-  <a href="category.html?type=competitions">Competitions</a>
-  <a href="category.html?type=tools">Tools</a>
-  <a href="category.html?type=safety">Safety</a>
+  <h3>ERaja</h3>
+  <a href="index.html">Home</a>
+  <a href="#" onclick="setModeAndGo('kids')">Kids Mode</a>
+  <a href="#" onclick="setModeAndGo('teacher')">Teacher Mode</a>
+  <a href="#" onclick="setModeAndGo('parent')">Parent Mode</a>
 </div>
 
 <div class="overlay" id="overlay" onclick="closeDrawer()"></div>
 
-<!-- MAIN -->
+<!-- ================= MAIN ================= -->
 <div class="container">
 
+  <!-- Hero Intro -->
   <div class="hero">
-    <h1>Kids & Youth Internet Directory</h1>
-    <p>Structured internet world for learning, growth and exploration.</p>
+    <h1>Structured Internet for Growing Minds</h1>
+    <p>Select your mode to explore curated platforms designed for safe learning, development and digital growth.</p>
   </div>
 
+  <!-- Mode Selection -->
   <div class="grid">
 
-    <div class="card">
-      <h3>Learning Platforms</h3>
-      <p>Structured academic websites and apps.</p>
-      <a href="category.html?type=learning" class="btn">Explore</a>
+    <!-- Kids -->
+    <div class="mode-card" onclick="setModeAndGo('kids')">
+      <span style="font-size:32px;">👶</span>
+      <h3>Kids Mode</h3>
+      <p>Fun, safe and structured learning platforms for young explorers.</p>
     </div>
 
-    <div class="card">
-      <h3>Coding & STEM</h3>
-      <p>Programming, robotics and science platforms.</p>
-      <a href="category.html?type=coding" class="btn">Explore</a>
+    <!-- Teacher -->
+    <div class="mode-card" onclick="setModeAndGo('teacher')">
+      <span style="font-size:32px;">👨‍🏫</span>
+      <h3>Teacher Mode</h3>
+      <p>Classroom tools, curriculum resources and engagement platforms.</p>
     </div>
 
-    <div class="card">
-      <h3>Creative Arts</h3>
-      <p>Art, animation and storytelling tools.</p>
-      <a href="category.html?type=creative" class="btn">Explore</a>
-    </div>
-
-    <div class="card">
-      <h3>Sports & Fitness</h3>
-      <p>Youth sports and fitness development.</p>
-      <a href="category.html?type=sports" class="btn">Explore</a>
-    </div>
-
-    <div class="card">
-      <h3>Govt & Scholarships</h3>
-      <p>Official education schemes and portals.</p>
-      <a href="category.html?type=govt" class="btn">Explore</a>
+    <!-- Parent -->
+    <div class="mode-card" onclick="setModeAndGo('parent')">
+      <span style="font-size:32px;">👩</span>
+      <h3>Parent Mode</h3>
+      <p>Guidance, safety, growth resources and digital parenting tools.</p>
     </div>
 
   </div>
 
 </div>
 
-<!-- FOOTER -->
-<div class="app-footer">
-  © 2026 ERaja – Structured Youth Internet Directory
+<!-- ================= FOOTER NAV ================= -->
+<div class="app-footer-nav">
+  <a href="index.html" class="footer-item">
+    <span>🏠</span>
+    Home
+  </a>
+  <a href="https://www.nftraja.com/p/qbank.html" class="footer-item">
+    <span>📘</span>
+    QBank
+  </a>
+  <a href="https://www.nftraja.com/p/toolraja.html" class="footer-item">
+    <span>🛠</span>
+    ToolRaja
+  </a>
+  <a href="https://www.nftraja.com" class="footer-item">
+    <span>🌐</span>
+    NFTRaja
+  </a>
 </div>
 
+<!-- ================= SCRIPT ================= -->
 <script src="assets/js/app.js"></script>
+
 </body>
 </html>
