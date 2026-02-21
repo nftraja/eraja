@@ -1,0 +1,30 @@
+[
+  {
+    "name": "National Scholarship Portal (India)",
+    "description": "Centralized scholarship application system.",
+    "ageGroup": "10-18",
+    "type": "Scholarship",
+    "link": "https://scholarships.gov.in"
+  },
+  {
+    "name": "DIKSHA Platform",
+    "description": "Indian government digital learning portal.",
+    "ageGroup": "6-18",
+    "type": "Learning",
+    "link": "https://diksha.gov.in"
+  },
+  {
+    "name": "MyGov India",
+    "description": "Government engagement and awareness portal.",
+    "ageGroup": "13-18",
+    "type": "Civic Awareness",
+    "link": "https://www.mygov.in"
+  },
+  {
+    "name": "UNICEF Learning Resources",
+    "description": "Child development and education resources.",
+    "ageGroup": "5-16",
+    "type": "Global Education",
+    "link": "https://www.unicef.org/education"
+  }
+]
