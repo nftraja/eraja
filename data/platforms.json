@@ -1,0 +1,1352 @@
+[
+{
+  "id": 1,
+  "name": "Khan Academy",
+  "category": "learning",
+  "age": "6-16",
+  "type": "Free",
+  "description": "Global structured learning platform offering interactive lessons in mathematics, science, computing and exam preparation. Provides mastery tracking, practice exercises and personalized dashboards for consistent academic growth.",
+  "url": "https://www.khanacademy.org"
+},
+{
+  "id": 2,
+  "name": "National Digital Library of India",
+  "category": "learning",
+  "age": "10-18",
+  "type": "Free",
+  "description": "Government supported digital repository providing textbooks, reference materials, research papers and academic resources across disciplines for school students and competitive exam aspirants.",
+  "url": "https://ndl.iitkgp.ac.in"
+},
+{
+  "id": 3,
+  "name": "BYJU'S",
+  "category": "learning",
+  "age": "6-16",
+  "type": "Freemium",
+  "description": "Interactive learning application delivering animated lessons for school subjects and competitive examinations with quizzes, progress tracking and visual concept explanations.",
+  "url": "https://byjus.com"
+},
+{
+  "id": 4,
+  "name": "Scratch",
+  "category": "coding",
+  "age": "6-14",
+  "type": "Free",
+  "description": "Block based programming platform developed by MIT enabling children to create games, animations and interactive stories while learning computational thinking concepts.",
+  "url": "https://scratch.mit.edu"
+},
+{
+  "id": 5,
+  "name": "Code.org",
+  "category": "coding",
+  "age": "6-18",
+  "type": "Free",
+  "description": "Educational coding platform providing structured computer science curriculum, interactive challenges and project based learning modules for beginners.",
+  "url": "https://code.org"
+},
+{
+  "id": 6,
+  "name": "Tynker",
+  "category": "coding",
+  "age": "7-16",
+  "type": "Freemium",
+  "description": "Game based coding platform offering guided lessons in programming, robotics and game development for school students.",
+  "url": "https://www.tynker.com"
+},
+{
+  "id": 7,
+  "name": "Canva for Education",
+  "category": "creative",
+  "age": "10-18",
+  "type": "Freemium",
+  "description": "Design platform enabling students to create presentations, posters and creative projects with easy drag and drop visual tools.",
+  "url": "https://www.canva.com/education/"
+},
+{
+  "id": 8,
+  "name": "Chrome Music Lab",
+  "category": "creative",
+  "age": "6-14",
+  "type": "Free",
+  "description": "Interactive music experimentation website helping children explore rhythm, melody and sound patterns through visual learning tools.",
+  "url": "https://musiclab.chromeexperiments.com"
+},
+{
+  "id": 9,
+  "name": "Storyboard That",
+  "category": "creative",
+  "age": "8-16",
+  "type": "Freemium",
+  "description": "Online storyboard and comic creation platform supporting creative storytelling and visual expression projects.",
+  "url": "https://www.storyboardthat.com"
+},
+{
+  "id": 10,
+  "name": "FIFA Training Centre",
+  "category": "sports",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Official football development resource offering structured drills, training videos and coaching guidance for young players.",
+  "url": "https://www.fifatrainingcentre.com"
+},
+{
+  "id": 11,
+  "name": "NBA Jr",
+  "category": "sports",
+  "age": "6-16",
+  "type": "Free",
+  "description": "Youth basketball initiative providing skill development guides, drills and character building resources.",
+  "url": "https://jr.nba.com"
+},
+{
+  "id": 12,
+  "name": "Sports Authority of India",
+  "category": "sports",
+  "age": "10-18",
+  "type": "Free",
+  "description": "Government sports development body offering training programs and youth talent identification initiatives.",
+  "url": "https://sportsauthorityofindia.nic.in"
+},
+{
+  "id": 13,
+  "name": "LinkedIn Learning",
+  "category": "career",
+  "age": "15-18",
+  "type": "Paid",
+  "description": "Professional skills development platform offering structured video courses in technology, business and communication fields.",
+  "url": "https://www.linkedin.com/learning"
+},
+{
+  "id": 14,
+  "name": "National Career Service India",
+  "category": "career",
+  "age": "14-18",
+  "type": "Free",
+  "description": "Government career guidance portal providing job listings, career counselling and skill development information.",
+  "url": "https://www.ncs.gov.in"
+},
+{
+  "id": 15,
+  "name": "Internshala",
+  "category": "career",
+  "age": "15-18",
+  "type": "Freemium",
+  "description": "Internship and skill training platform connecting students with industry exposure and project opportunities.",
+  "url": "https://internshala.com"
+},
+{
+  "id": 16,
+  "name": "Notion",
+  "category": "tools",
+  "age": "13-18",
+  "type": "Freemium",
+  "description": "Productivity and note management platform allowing students to organize study material, projects and personal planning efficiently.",
+  "url": "https://www.notion.so"
+},
+{
+  "id": 17,
+  "name": "Google Docs",
+  "category": "tools",
+  "age": "6-18",
+  "type": "Free",
+  "description": "Cloud based document editor supporting collaborative writing, assignments and structured academic documentation.",
+  "url": "https://docs.google.com"
+},
+{
+  "id": 18,
+  "name": "Wolfram Alpha",
+  "category": "tools",
+  "age": "12-18",
+  "type": "Freemium",
+  "description": "Computational knowledge engine assisting students with mathematical calculations, data analysis and conceptual understanding.",
+  "url": "https://www.wolframalpha.com"
+},
+{
+  "id": 19,
+  "name": "Duolingo",
+  "category": "learning",
+  "age": "6-18",
+  "type": "Freemium",
+  "description": "Gamified language learning platform helping students build vocabulary and grammar skills through interactive exercises.",
+  "url": "https://www.duolingo.com"
+},
+{
+  "id": 20,
+  "name": "BBC Bitesize",
+  "category": "learning",
+  "age": "6-18",
+  "type": "Free",
+  "description": "Free structured revision platform offering academic lessons and exam preparation resources across multiple subjects.",
+  "url": "https://www.bbc.co.uk/bitesize"
+},
+{
+  "id": 21,
+  "name": "MIT App Inventor",
+  "category": "coding",
+  "age": "10-18",
+  "type": "Free",
+  "description": "Visual programming platform enabling students to create mobile applications using block based coding interface.",
+  "url": "https://appinventor.mit.edu"
+},
+{
+  "id": 22,
+  "name": "Tinkercad",
+  "category": "creative",
+  "age": "10-18",
+  "type": "Free",
+  "description": "Beginner friendly 3D design and modelling platform supporting creativity and engineering learning.",
+  "url": "https://www.tinkercad.com"
+},
+{
+  "id": 23,
+  "name": "Olympics Official Website",
+  "category": "sports",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Global sports portal offering athlete stories, training inspiration and Olympic values education.",
+  "url": "https://olympics.com"
+},
+{
+  "id": 24,
+  "name": "Coursera",
+  "category": "career",
+  "age": "15-18",
+  "type": "Freemium",
+  "description": "Online course platform offering university backed professional certificates and structured skill development programs.",
+  "url": "https://www.coursera.org"
+},
+{
+  "id": 25,
+  "name": "Trello",
+  "category": "tools",
+  "age": "12-18",
+  "type": "Freemium",
+  "description": "Task management platform allowing students to plan assignments, track goals and manage collaborative projects visually.",
+  "url": "https://trello.com"
+},
+{
+  "id": 26,
+  "name": "Prodigy Math",
+  "category": "learning",
+  "age": "6-14",
+  "type": "Freemium",
+  "description": "Game based mathematics learning platform that turns curriculum aligned math practice into interactive role playing adventures with adaptive difficulty and progress tracking.",
+  "url": "https://www.prodigygame.com"
+},
+{
+  "id": 27,
+  "name": "IXL Learning",
+  "category": "learning",
+  "age": "6-16",
+  "type": "Paid",
+  "description": "Comprehensive practice platform offering structured exercises in math, language arts, science and social studies with real time performance analytics.",
+  "url": "https://www.ixl.com"
+},
+{
+  "id": 28,
+  "name": "Vedantu",
+  "category": "learning",
+  "age": "8-18",
+  "type": "Freemium",
+  "description": "Live online tutoring platform providing interactive classes, doubt solving sessions and structured academic preparation resources.",
+  "url": "https://www.vedantu.com"
+},
+{
+  "id": 29,
+  "name": "Blockly Games",
+  "category": "coding",
+  "age": "7-14",
+  "type": "Free",
+  "description": "Educational coding games that introduce programming logic through puzzles and visual block based challenges.",
+  "url": "https://blockly.games"
+},
+{
+  "id": 30,
+  "name": "Replit",
+  "category": "coding",
+  "age": "12-18",
+  "type": "Freemium",
+  "description": "Browser based coding environment supporting multiple programming languages with collaborative coding features.",
+  "url": "https://replit.com"
+},
+{
+  "id": 31,
+  "name": "CodeChef",
+  "category": "coding",
+  "age": "12-18",
+  "type": "Free",
+  "description": "Competitive programming platform offering coding challenges, contests and algorithm practice for students.",
+  "url": "https://www.codechef.com"
+},
+{
+  "id": 32,
+  "name": "Pixlr",
+  "category": "creative",
+  "age": "10-18",
+  "type": "Freemium",
+  "description": "Online photo editing and graphic design tool enabling students to create creative visual projects easily.",
+  "url": "https://pixlr.com"
+},
+{
+  "id": 33,
+  "name": "Incredibox",
+  "category": "creative",
+  "age": "8-16",
+  "type": "Freemium",
+  "description": "Music creation platform allowing users to experiment with rhythm and sound layering interactively.",
+  "url": "https://www.incredibox.com"
+},
+{
+  "id": 34,
+  "name": "ArtStation Learning",
+  "category": "creative",
+  "age": "14-18",
+  "type": "Freemium",
+  "description": "Creative learning resource offering digital art tutorials and portfolio development guidance.",
+  "url": "https://www.artstation.com/learning"
+},
+{
+  "id": 35,
+  "name": "LaLiga Grassroots",
+  "category": "sports",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Youth football development initiative providing structured training resources and grassroots coaching programs.",
+  "url": "https://www.laliga.com"
+},
+{
+  "id": 36,
+  "name": "ICC Cricket",
+  "category": "sports",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Official cricket resource portal featuring match education, player development insights and global tournament coverage.",
+  "url": "https://www.icc-cricket.com"
+},
+{
+  "id": 37,
+  "name": "Decathlon Coaching",
+  "category": "sports",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Sports training resource platform providing workout plans and skill development exercises for various sports.",
+  "url": "https://www.decathlon.in"
+},
+{
+  "id": 38,
+  "name": "FutureLearn",
+  "category": "career",
+  "age": "15-18",
+  "type": "Freemium",
+  "description": "Online learning platform offering university backed courses focused on career and skill development.",
+  "url": "https://www.futurelearn.com"
+},
+{
+  "id": 39,
+  "name": "Udemy",
+  "category": "career",
+  "age": "15-18",
+  "type": "Paid",
+  "description": "Global online course marketplace providing practical skill development and professional training courses.",
+  "url": "https://www.udemy.com"
+},
+{
+  "id": 40,
+  "name": "Skillshare",
+  "category": "career",
+  "age": "14-18",
+  "type": "Paid",
+  "description": "Creative and professional learning platform focused on design, business and technology skills.",
+  "url": "https://www.skillshare.com"
+},
+{
+  "id": 41,
+  "name": "Evernote",
+  "category": "tools",
+  "age": "12-18",
+  "type": "Freemium",
+  "description": "Digital note taking application helping students organize study notes, research material and ideas efficiently.",
+  "url": "https://evernote.com"
+},
+{
+  "id": 42,
+  "name": "Google Calendar",
+  "category": "tools",
+  "age": "10-18",
+  "type": "Free",
+  "description": "Scheduling tool allowing students to manage study plans, deadlines and academic events systematically.",
+  "url": "https://calendar.google.com"
+},
+{
+  "id": 43,
+  "name": "Grammarly",
+  "category": "tools",
+  "age": "12-18",
+  "type": "Freemium",
+  "description": "Writing assistant platform supporting grammar improvement and clear communication skills.",
+  "url": "https://www.grammarly.com"
+},
+{
+  "id": 44,
+  "name": "Quizlet",
+  "category": "learning",
+  "age": "8-18",
+  "type": "Freemium",
+  "description": "Flashcard based study platform helping students memorize concepts and prepare for exams interactively.",
+  "url": "https://quizlet.com"
+},
+{
+  "id": 45,
+  "name": "Toppr",
+  "category": "learning",
+  "age": "8-18",
+  "type": "Freemium",
+  "description": "Online academic learning application offering structured courses and personalized practice modules.",
+  "url": "https://www.toppr.com"
+},
+{
+  "id": 46,
+  "name": "Brilliant",
+  "category": "learning",
+  "age": "10-18",
+  "type": "Freemium",
+  "description": "Interactive problem solving platform focused on mathematics, science and logical reasoning skills.",
+  "url": "https://www.brilliant.org"
+},
+{
+  "id": 47,
+  "name": "CodeWars",
+  "category": "coding",
+  "age": "13-18",
+  "type": "Free",
+  "description": "Coding challenge platform allowing learners to improve programming skills through community driven tasks.",
+  "url": "https://www.codewars.com"
+},
+{
+  "id": 48,
+  "name": "GitHub",
+  "category": "coding",
+  "age": "13-18",
+  "type": "Free",
+  "description": "Version control and collaboration platform enabling students to host, manage and showcase coding projects.",
+  "url": "https://github.com"
+},
+{
+  "id": 49,
+  "name": "Figma",
+  "category": "creative",
+  "age": "13-18",
+  "type": "Freemium",
+  "description": "Collaborative design tool used for creating user interface layouts, wireframes and visual prototypes.",
+  "url": "https://www.figma.com"
+},
+{
+  "id": 50,
+  "name": "Behance",
+  "category": "creative",
+  "age": "13-18",
+  "type": "Free",
+  "description": "Creative portfolio platform allowing students to showcase design, illustration and art projects globally.",
+  "url": "https://www.behance.net"
+},
+{
+  "id": 51,
+  "name": "National Geographic Kids",
+  "category": "learning",
+  "age": "6-14",
+  "type": "Free",
+  "description": "Educational platform offering science facts, geography knowledge, wildlife exploration and interactive quizzes designed for curious young learners.",
+  "url": "https://kids.nationalgeographic.com"
+},
+{
+  "id": 52,
+  "name": "Discovery Education",
+  "category": "learning",
+  "age": "8-18",
+  "type": "Freemium",
+  "description": "Curriculum aligned digital classroom resources providing videos, lesson plans and structured learning content for school students.",
+  "url": "https://www.discoveryeducation.com"
+},
+{
+  "id": 53,
+  "name": "NASA Kids Club",
+  "category": "learning",
+  "age": "6-14",
+  "type": "Free",
+  "description": "Space themed educational platform featuring interactive games and science based learning activities for children.",
+  "url": "https://www.nasa.gov/kidsclub"
+},
+{
+  "id": 54,
+  "name": "GeeksforGeeks",
+  "category": "coding",
+  "age": "13-18",
+  "type": "Freemium",
+  "description": "Programming education portal providing tutorials, coding problems and interview preparation resources for computer science learners.",
+  "url": "https://www.geeksforgeeks.org"
+},
+{
+  "id": 55,
+  "name": "HackerRank",
+  "category": "coding",
+  "age": "13-18",
+  "type": "Free",
+  "description": "Skill based coding challenge platform helping students practice algorithms and programming concepts through real world problems.",
+  "url": "https://www.hackerrank.com"
+},
+{
+  "id": 56,
+  "name": "CS First by Google",
+  "category": "coding",
+  "age": "9-16",
+  "type": "Free",
+  "description": "Free computer science curriculum introducing coding fundamentals through video based guided Scratch projects.",
+  "url": "https://csfirst.withgoogle.com"
+},
+{
+  "id": 57,
+  "name": "Adobe Express",
+  "category": "creative",
+  "age": "10-18",
+  "type": "Freemium",
+  "description": "Creative design tool enabling quick poster, video and social media content creation using easy templates.",
+  "url": "https://www.adobe.com/express"
+},
+{
+  "id": 58,
+  "name": "Dribbble",
+  "category": "creative",
+  "age": "14-18",
+  "type": "Free",
+  "description": "Global design showcase platform where creative students can explore and publish digital artwork portfolios.",
+  "url": "https://dribbble.com"
+},
+{
+  "id": 59,
+  "name": "Krita",
+  "category": "creative",
+  "age": "12-18",
+  "type": "Free",
+  "description": "Open source digital painting software supporting illustration, concept art and animation learning.",
+  "url": "https://krita.org"
+},
+{
+  "id": 60,
+  "name": "UEFA Grassroots",
+  "category": "sports",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Youth football development initiative promoting training resources and structured skill improvement programs.",
+  "url": "https://www.uefa.com"
+},
+{
+  "id": 61,
+  "name": "All India Football Federation",
+  "category": "sports",
+  "age": "10-18",
+  "type": "Free",
+  "description": "Official Indian football body offering youth development updates and training opportunities.",
+  "url": "https://www.the-aiff.com"
+},
+{
+  "id": 62,
+  "name": "USA Basketball Youth",
+  "category": "sports",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Basketball development platform providing structured drills, coaching guidance and youth training programs.",
+  "url": "https://www.usab.com/youth"
+},
+{
+  "id": 63,
+  "name": "edX",
+  "category": "career",
+  "age": "15-18",
+  "type": "Freemium",
+  "description": "University backed online learning platform offering academic and career focused professional certification programs.",
+  "url": "https://www.edx.org"
+},
+{
+  "id": 64,
+  "name": "Alison",
+  "category": "career",
+  "age": "15-18",
+  "type": "Free",
+  "description": "Free online certification platform offering structured skill courses across multiple industries.",
+  "url": "https://alison.com"
+},
+{
+  "id": 65,
+  "name": "UpGrad",
+  "category": "career",
+  "age": "15-18",
+  "type": "Paid",
+  "description": "Higher education focused learning platform offering professional upskilling and certification programs.",
+  "url": "https://www.upgrad.com"
+},
+{
+  "id": 66,
+  "name": "Microsoft OneNote",
+  "category": "tools",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Digital notebook application enabling organized note taking, research management and classroom collaboration.",
+  "url": "https://www.onenote.com"
+},
+{
+  "id": 67,
+  "name": "Google Slides",
+  "category": "tools",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Cloud based presentation tool allowing collaborative academic project creation and structured slide design.",
+  "url": "https://slides.google.com"
+},
+{
+  "id": 68,
+  "name": "Miro",
+  "category": "tools",
+  "age": "13-18",
+  "type": "Freemium",
+  "description": "Online collaborative whiteboard tool supporting brainstorming, project planning and visual organization.",
+  "url": "https://miro.com"
+},
+{
+  "id": 69,
+  "name": "Scholastic Learn at Home",
+  "category": "learning",
+  "age": "6-14",
+  "type": "Free",
+  "description": "Reading and literacy focused educational platform offering daily learning journeys and interactive stories.",
+  "url": "https://classroommagazines.scholastic.com"
+},
+{
+  "id": 70,
+  "name": "OpenStax",
+  "category": "learning",
+  "age": "14-18",
+  "type": "Free",
+  "description": "Free open source textbook platform providing high quality academic books for secondary education.",
+  "url": "https://openstax.org"
+},
+{
+  "id": 71,
+  "name": "LeetCode",
+  "category": "coding",
+  "age": "14-18",
+  "type": "Freemium",
+  "description": "Algorithm practice platform preparing students for technical interviews and advanced programming skills.",
+  "url": "https://leetcode.com"
+},
+{
+  "id": 72,
+  "name": "Visual Studio Code",
+  "category": "coding",
+  "age": "13-18",
+  "type": "Free",
+  "description": "Popular source code editor supporting multiple programming languages and development workflows.",
+  "url": "https://code.visualstudio.com"
+},
+{
+  "id": 73,
+  "name": "Blender",
+  "category": "creative",
+  "age": "13-18",
+  "type": "Free",
+  "description": "Open source 3D modeling and animation software used for digital art and creative production learning.",
+  "url": "https://www.blender.org"
+},
+{
+  "id": 74,
+  "name": "Pinterest",
+  "category": "creative",
+  "age": "13-18",
+  "type": "Free",
+  "description": "Visual discovery platform helping students explore creative ideas, art inspiration and design concepts.",
+  "url": "https://www.pinterest.com"
+},
+{
+  "id": 75,
+  "name": "Coursera Career Academy",
+  "category": "career",
+  "age": "15-18",
+  "type": "Freemium",
+  "description": "Career oriented structured certification programs aligned with industry skill requirements.",
+  "url": "https://www.coursera.org"
+},
+{
+  "id": 76,
+  "name": "Udacity",
+  "category": "career",
+  "age": "15-18",
+  "type": "Paid",
+  "description": "Technology focused learning platform offering nanodegree programs in programming, data science and artificial intelligence aligned with industry skills.",
+  "url": "https://www.udacity.com"
+},
+{
+  "id": 77,
+  "name": "Thinkific",
+  "category": "tools",
+  "age": "15-18",
+  "type": "Freemium",
+  "description": "Online course creation platform enabling structured digital education and skill sharing initiatives.",
+  "url": "https://www.thinkific.com"
+},
+{
+  "id": 78,
+  "name": "Nearpod",
+  "category": "learning",
+  "age": "6-18",
+  "type": "Freemium",
+  "description": "Interactive classroom engagement platform offering quizzes, polls and collaborative learning experiences.",
+  "url": "https://nearpod.com"
+},
+{
+  "id": 79,
+  "name": "BrainPOP",
+  "category": "learning",
+  "age": "6-14",
+  "type": "Paid",
+  "description": "Animated educational platform providing curriculum aligned videos and quizzes for school students.",
+  "url": "https://www.brainpop.com"
+},
+{
+  "id": 80,
+  "name": "Kodable",
+  "category": "coding",
+  "age": "5-12",
+  "type": "Freemium",
+  "description": "Early age coding platform introducing programming logic and problem solving through interactive games.",
+  "url": "https://www.kodable.com"
+},
+{
+  "id": 81,
+  "name": "CodeCombat",
+  "category": "coding",
+  "age": "9-16",
+  "type": "Freemium",
+  "description": "Game based programming platform teaching real coding languages through adventure driven challenges.",
+  "url": "https://codecombat.com"
+},
+{
+  "id": 82,
+  "name": "Unity Learn",
+  "category": "coding",
+  "age": "14-18",
+  "type": "Free",
+  "description": "Game development learning platform offering structured tutorials for 2D and 3D game creation.",
+  "url": "https://learn.unity.com"
+},
+{
+  "id": 83,
+  "name": "Autodesk Tinkercad Circuits",
+  "category": "creative",
+  "age": "10-18",
+  "type": "Free",
+  "description": "Interactive electronics simulation tool helping students learn circuit design and engineering basics.",
+  "url": "https://www.tinkercad.com/circuits"
+},
+{
+  "id": 84,
+  "name": "BandLab",
+  "category": "creative",
+  "age": "10-18",
+  "type": "Free",
+  "description": "Cloud based music creation studio allowing collaborative composition and audio experimentation.",
+  "url": "https://www.bandlab.com"
+},
+{
+  "id": 85,
+  "name": "Pixabay",
+  "category": "creative",
+  "age": "10-18",
+  "type": "Free",
+  "description": "Free stock image and media platform supporting creative projects and educational presentations.",
+  "url": "https://pixabay.com"
+},
+{
+  "id": 86,
+  "name": "Fit India Movement",
+  "category": "sports",
+  "age": "6-18",
+  "type": "Free",
+  "description": "Government initiative promoting youth fitness awareness, physical activity programs and sports culture.",
+  "url": "https://fitindia.gov.in"
+},
+{
+  "id": 87,
+  "name": "GoNoodle",
+  "category": "sports",
+  "age": "6-14",
+  "type": "Free",
+  "description": "Interactive movement and fitness platform encouraging healthy physical activity for children.",
+  "url": "https://www.gonoodle.com"
+},
+{
+  "id": 88,
+  "name": "Decathlon Play",
+  "category": "sports",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Sports participation and training resource platform promoting skill improvement and youth engagement.",
+  "url": "https://play.decathlon.in"
+},
+{
+  "id": 89,
+  "name": "National Skill Development Corporation",
+  "category": "career",
+  "age": "14-18",
+  "type": "Free",
+  "description": "Indian government skill development body offering vocational training and career awareness resources.",
+  "url": "https://www.nsdcindia.org"
+},
+{
+  "id": 90,
+  "name": "Coursera Project Network",
+  "category": "career",
+  "age": "15-18",
+  "type": "Freemium",
+  "description": "Hands on guided project platform helping learners build job ready digital skills quickly.",
+  "url": "https://www.coursera.org/projects"
+},
+{
+  "id": 91,
+  "name": "Skill India Digital",
+  "category": "career",
+  "age": "14-18",
+  "type": "Free",
+  "description": "Government backed online platform offering structured skill courses and vocational training programs.",
+  "url": "https://www.skillindiadigital.gov.in"
+},
+{
+  "id": 92,
+  "name": "Canva Whiteboard",
+  "category": "tools",
+  "age": "10-18",
+  "type": "Freemium",
+  "description": "Collaborative digital whiteboard tool supporting brainstorming and visual learning activities.",
+  "url": "https://www.canva.com/whiteboards/"
+},
+{
+  "id": 93,
+  "name": "Mendeley",
+  "category": "tools",
+  "age": "14-18",
+  "type": "Free",
+  "description": "Research management and citation organization tool supporting academic documentation and study planning.",
+  "url": "https://www.mendeley.com"
+},
+{
+  "id": 94,
+  "name": "Google Scholar",
+  "category": "tools",
+  "age": "14-18",
+  "type": "Free",
+  "description": "Academic research search engine providing access to scholarly articles and publications.",
+  "url": "https://scholar.google.com"
+},
+{
+  "id": 95,
+  "name": "Math Playground",
+  "category": "learning",
+  "age": "6-14",
+  "type": "Free",
+  "description": "Interactive math practice website offering logic games and structured problem solving exercises.",
+  "url": "https://www.mathplayground.com"
+},
+{
+  "id": 96,
+  "name": "CK-12 Foundation",
+  "category": "learning",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Free digital textbooks and practice platform offering customizable educational content.",
+  "url": "https://www.ck12.org"
+},
+{
+  "id": 97,
+  "name": "TypingClub",
+  "category": "tools",
+  "age": "6-16",
+  "type": "Free",
+  "description": "Structured typing practice platform helping students build keyboard efficiency and accuracy skills.",
+  "url": "https://www.typingclub.com"
+},
+{
+  "id": 98,
+  "name": "Hour of Code",
+  "category": "coding",
+  "age": "6-18",
+  "type": "Free",
+  "description": "Global coding awareness initiative offering introductory programming activities and challenges.",
+  "url": "https://hourofcode.com"
+},
+{
+  "id": 99,
+  "name": "Reedsy Learning",
+  "category": "creative",
+  "age": "14-18",
+  "type": "Free",
+  "description": "Writing focused learning platform offering creative writing resources and publishing guidance.",
+  "url": "https://blog.reedsy.com/learning/"
+},
+{
+  "id": 100,
+  "name": "Young India Portal",
+  "category": "career",
+  "age": "14-18",
+  "type": "Free",
+  "description": "Youth focused information platform providing awareness about opportunities, skills and development programs.",
+  "url": "https://www.india.gov.in"
+},
+{
+  "id": 101,
+  "name": "OpenLearn",
+  "category": "learning",
+  "age": "14-18",
+  "type": "Free",
+  "description": "Free learning platform by The Open University offering structured courses across academic and personal development subjects.",
+  "url": "https://www.open.edu/openlearn"
+},
+{
+  "id": 102,
+  "name": "Project Gutenberg",
+  "category": "learning",
+  "age": "10-18",
+  "type": "Free",
+  "description": "Digital library providing free access to classic literature and educational books for reading practice.",
+  "url": "https://www.gutenberg.org"
+},
+{
+  "id": 103,
+  "name": "Google Arts & Culture",
+  "category": "creative",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Cultural exploration platform offering virtual museum tours and art history learning experiences.",
+  "url": "https://artsandculture.google.com"
+},
+{
+  "id": 104,
+  "name": "Kiddle",
+  "category": "tools",
+  "age": "6-14",
+  "type": "Free",
+  "description": "Safe search engine designed specifically for children to explore educational content securely.",
+  "url": "https://www.kiddle.co"
+},
+{
+  "id": 105,
+  "name": "CoolMath Games",
+  "category": "learning",
+  "age": "6-14",
+  "type": "Free",
+  "description": "Logic and math based educational game platform promoting analytical thinking and problem solving skills.",
+  "url": "https://www.coolmathgames.com"
+},
+{
+  "id": 106,
+  "name": "WhiteHat Jr",
+  "category": "coding",
+  "age": "6-16",
+  "type": "Paid",
+  "description": "Live coding education platform offering structured programming courses for young learners.",
+  "url": "https://www.whitehatjr.com"
+},
+{
+  "id": 107,
+  "name": "JetBrains Academy",
+  "category": "coding",
+  "age": "14-18",
+  "type": "Freemium",
+  "description": "Project based programming learning platform focused on real coding practice and application building.",
+  "url": "https://www.jetbrains.com/academy/"
+},
+{
+  "id": 108,
+  "name": "W3Schools",
+  "category": "coding",
+  "age": "12-18",
+  "type": "Free",
+  "description": "Web development learning portal offering tutorials and interactive coding examples for beginners.",
+  "url": "https://www.w3schools.com"
+},
+{
+  "id": 109,
+  "name": "National Youth Portal India",
+  "category": "career",
+  "age": "14-18",
+  "type": "Free",
+  "description": "Government youth information portal providing updates on opportunities, initiatives and skill programs.",
+  "url": "https://www.nyp.in"
+},
+{
+  "id": 110,
+  "name": "Apna App",
+  "category": "career",
+  "age": "15-18",
+  "type": "Free",
+  "description": "Job and skill connection platform helping youth explore entry level employment opportunities.",
+  "url": "https://www.apna.co"
+},
+{
+  "id": 111,
+  "name": "Skill-Lync",
+  "category": "career",
+  "age": "15-18",
+  "type": "Paid",
+  "description": "Engineering focused upskilling platform offering job oriented certification programs.",
+  "url": "https://skill-lync.com"
+},
+{
+  "id": 112,
+  "name": "EverFi",
+  "category": "learning",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Interactive digital education platform covering financial literacy and life skills subjects.",
+  "url": "https://everfi.com"
+},
+{
+  "id": 113,
+  "name": "National Geographic Education",
+  "category": "learning",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Educational resources and teaching tools focused on geography and environmental awareness.",
+  "url": "https://www.nationalgeographic.org/education/"
+},
+{
+  "id": 114,
+  "name": "Phet Interactive Simulations",
+  "category": "learning",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Science and mathematics simulation platform providing visual interactive experiments for concept clarity.",
+  "url": "https://phet.colorado.edu"
+},
+{
+  "id": 115,
+  "name": "Kahoot",
+  "category": "tools",
+  "age": "6-18",
+  "type": "Freemium",
+  "description": "Game based quiz creation platform used for interactive classroom engagement and revision.",
+  "url": "https://kahoot.com"
+},
+{
+  "id": 116,
+  "name": "Mentimeter",
+  "category": "tools",
+  "age": "12-18",
+  "type": "Freemium",
+  "description": "Audience engagement tool supporting live polls, quizzes and classroom interaction.",
+  "url": "https://www.mentimeter.com"
+},
+{
+  "id": 117,
+  "name": "Padlet",
+  "category": "tools",
+  "age": "8-18",
+  "type": "Freemium",
+  "description": "Collaborative digital board for sharing ideas, notes and creative classroom projects.",
+  "url": "https://padlet.com"
+},
+{
+  "id": 118,
+  "name": "World Athletics",
+  "category": "sports",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Official athletics body website offering youth training resources and sports inspiration.",
+  "url": "https://worldathletics.org"
+},
+{
+  "id": 119,
+  "name": "USA Gymnastics",
+  "category": "sports",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Youth gymnastics development platform providing training insights and program guidance.",
+  "url": "https://usagym.org"
+},
+{
+  "id": 120,
+  "name": "TeachEngineering",
+  "category": "learning",
+  "age": "10-18",
+  "type": "Free",
+  "description": "STEM focused lesson and activity repository supporting engineering education concepts.",
+  "url": "https://www.teachengineering.org"
+},
+{
+  "id": 121,
+  "name": "ScratchEd",
+  "category": "coding",
+  "age": "8-16",
+  "type": "Free",
+  "description": "Community resource hub supporting Scratch coding educators and learners with project ideas.",
+  "url": "https://scratched.gse.harvard.edu"
+},
+{
+  "id": 122,
+  "name": "Khan Academy Kids",
+  "category": "learning",
+  "age": "4-8",
+  "type": "Free",
+  "description": "Early childhood learning application offering foundational literacy and numeracy activities.",
+  "url": "https://learn.khanacademy.org/khan-academy-kids/"
+},
+{
+  "id": 123,
+  "name": "Trello Education",
+  "category": "tools",
+  "age": "12-18",
+  "type": "Freemium",
+  "description": "Project planning tool supporting classroom collaboration and assignment tracking.",
+  "url": "https://trello.com/education"
+},
+{
+  "id": 124,
+  "name": "Behance Student Showcase",
+  "category": "creative",
+  "age": "13-18",
+  "type": "Free",
+  "description": "Portfolio showcase platform enabling creative students to publish design and art work.",
+  "url": "https://www.behance.net"
+},
+{
+  "id": 125,
+  "name": "National Career Development Association",
+  "category": "career",
+  "age": "15-18",
+  "type": "Free",
+  "description": "Career guidance association providing resources for structured professional development awareness.",
+  "url": "https://www.ncda.org"
+},
+{
+  "id": 126,
+  "name": "Skillshare for Students",
+  "category": "career",
+  "age": "15-18",
+  "type": "Paid",
+  "description": "Creative skill development platform offering project based courses in design, business and digital production for young learners.",
+  "url": "https://www.skillshare.com"
+},
+{
+  "id": 127,
+  "name": "National Apprenticeship Training Scheme",
+  "category": "career",
+  "age": "15-18",
+  "type": "Free",
+  "description": "Government apprenticeship initiative providing vocational training opportunities and industry exposure programs.",
+  "url": "https://www.mhrdnats.gov.in"
+},
+{
+  "id": 128,
+  "name": "UNICEF Youth Platform",
+  "category": "career",
+  "age": "14-18",
+  "type": "Free",
+  "description": "Global youth engagement platform offering leadership opportunities and awareness resources for students.",
+  "url": "https://www.unicef.org"
+},
+{
+  "id": 129,
+  "name": "Canva Design School",
+  "category": "creative",
+  "age": "10-18",
+  "type": "Free",
+  "description": "Educational design resource offering structured tutorials in graphic design, branding and creative storytelling.",
+  "url": "https://www.canva.com/learn/"
+},
+{
+  "id": 130,
+  "name": "Unsplash",
+  "category": "creative",
+  "age": "10-18",
+  "type": "Free",
+  "description": "Free high quality image platform supporting visual projects and educational content creation.",
+  "url": "https://unsplash.com"
+},
+{
+  "id": 131,
+  "name": "Inkscape",
+  "category": "creative",
+  "age": "12-18",
+  "type": "Free",
+  "description": "Open source vector graphics editor used for digital illustration and design learning.",
+  "url": "https://inkscape.org"
+},
+{
+  "id": 132,
+  "name": "Harvard CS50",
+  "category": "coding",
+  "age": "14-18",
+  "type": "Free",
+  "description": "Introductory computer science course offering structured programming knowledge and problem solving skills.",
+  "url": "https://cs50.harvard.edu"
+},
+{
+  "id": 133,
+  "name": "FreeCodeCamp",
+  "category": "coding",
+  "age": "14-18",
+  "type": "Free",
+  "description": "Project based programming platform providing hands on coding practice and certification paths.",
+  "url": "https://www.freecodecamp.org"
+},
+{
+  "id": 134,
+  "name": "Codecademy",
+  "category": "coding",
+  "age": "13-18",
+  "type": "Freemium",
+  "description": "Interactive coding platform offering guided lessons across programming languages and web development.",
+  "url": "https://www.codecademy.com"
+},
+{
+  "id": 135,
+  "name": "National Service Scheme",
+  "category": "career",
+  "age": "14-18",
+  "type": "Free",
+  "description": "Youth volunteer initiative promoting community engagement, leadership and civic awareness among students.",
+  "url": "https://nss.gov.in"
+},
+{
+  "id": 136,
+  "name": "MyGov India",
+  "category": "career",
+  "age": "14-18",
+  "type": "Free",
+  "description": "Citizen participation platform providing information about government initiatives and youth opportunities.",
+  "url": "https://www.mygov.in"
+},
+{
+  "id": 137,
+  "name": "Google Workspace for Education",
+  "category": "tools",
+  "age": "6-18",
+  "type": "Free",
+  "description": "Integrated productivity suite offering collaborative tools for classroom communication and academic planning.",
+  "url": "https://edu.google.com"
+},
+{
+  "id": 138,
+  "name": "Slack",
+  "category": "tools",
+  "age": "14-18",
+  "type": "Freemium",
+  "description": "Team communication platform supporting collaborative learning projects and structured discussion spaces.",
+  "url": "https://slack.com"
+},
+{
+  "id": 139,
+  "name": "Zoom Education",
+  "category": "tools",
+  "age": "8-18",
+  "type": "Freemium",
+  "description": "Video conferencing platform widely used for online classes and collaborative academic sessions.",
+  "url": "https://zoom.us"
+},
+{
+  "id": 140,
+  "name": "Teach Starter",
+  "category": "learning",
+  "age": "6-16",
+  "type": "Freemium",
+  "description": "Educational resource library offering printable worksheets and structured lesson materials.",
+  "url": "https://www.teachstarter.com"
+},
+{
+  "id": 141,
+  "name": "Mystery Science",
+  "category": "learning",
+  "age": "6-12",
+  "type": "Freemium",
+  "description": "Science learning platform providing engaging video lessons and hands on experiments for children.",
+  "url": "https://mysteryscience.com"
+},
+{
+  "id": 142,
+  "name": "Duolingo ABC",
+  "category": "learning",
+  "age": "4-8",
+  "type": "Free",
+  "description": "Early literacy application helping young children build foundational reading skills interactively.",
+  "url": "https://abc.duolingo.com"
+},
+{
+  "id": 143,
+  "name": "Youth Olympic Games",
+  "category": "sports",
+  "age": "8-18",
+  "type": "Free",
+  "description": "International youth sporting event platform inspiring young athletes through global competition.",
+  "url": "https://olympics.com/youth-olympic-games"
+},
+{
+  "id": 144,
+  "name": "National Basketball Federation",
+  "category": "sports",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Basketball development resource providing youth training programs and competition updates.",
+  "url": "https://www.fiba.basketball"
+},
+{
+  "id": 145,
+  "name": "All India Tennis Association",
+  "category": "sports",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Official tennis body offering youth development initiatives and tournament participation information.",
+  "url": "https://www.aita.in"
+},
+{
+  "id": 146,
+  "name": "TED-Ed",
+  "category": "learning",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Educational video platform delivering animated lessons across science, history and life skills subjects.",
+  "url": "https://ed.ted.com"
+},
+{
+  "id": 147,
+  "name": "National Digital Education Architecture",
+  "category": "learning",
+  "age": "8-18",
+  "type": "Free",
+  "description": "Indian digital education initiative providing structured technology driven learning infrastructure.",
+  "url": "https://ndear.gov.in"
+},
+{
+  "id": 148,
+  "name": "Stack Overflow",
+  "category": "coding",
+  "age": "14-18",
+  "type": "Free",
+  "description": "Developer community platform enabling knowledge sharing and programming problem resolution.",
+  "url": "https://stackoverflow.com"
+},
+{
+  "id": 149,
+  "name": "GitLab",
+  "category": "coding",
+  "age": "14-18",
+  "type": "Free",
+  "description": "DevOps collaboration platform supporting code management and version control workflows.",
+  "url": "https://gitlab.com"
+},
+{
+  "id": 150,
+  "name": "World Health Organization Youth",
+  "category": "learning",
+  "age": "10-18",
+  "type": "Free",
+  "description": "Global health awareness platform offering educational resources about well being and public health topics.",
+  "url": "https://www.who.int"
+}
+]
