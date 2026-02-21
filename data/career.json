@@ -1,0 +1,107 @@
+[
+  {
+    "name": "National Career Service (India)",
+    "description": "Government career guidance and job information portal.",
+    "age": "14-18",
+    "type": "Free",
+    "url": "https://www.ncs.gov.in"
+  },
+  {
+    "name": "MyNextMove",
+    "description": "Career exploration tool for students.",
+    "age": "13-18",
+    "type": "Free",
+    "url": "https://www.mynextmove.org"
+  },
+  {
+    "name": "CareerExplorer",
+    "description": "Career assessment and exploration platform.",
+    "age": "14-18",
+    "type": "Freemium",
+    "url": "https://www.careerexplorer.com"
+  },
+  {
+    "name": "Pratham Institute",
+    "description": "Skill development and vocational guidance.",
+    "age": "14-18",
+    "type": "Free",
+    "url": "https://www.pratham.org"
+  },
+  {
+    "name": "Skill India",
+    "description": "Government vocational skill development initiative.",
+    "age": "14-18",
+    "type": "Free",
+    "url": "https://www.skillindia.gov.in"
+  },
+  {
+    "name": "Internshala",
+    "description": "Internship and training platform for students.",
+    "age": "15-18",
+    "type": "Freemium",
+    "url": "https://internshala.com"
+  },
+  {
+    "name": "LinkedIn Learning",
+    "description": "Professional skills courses and career development.",
+    "age": "16-18",
+    "type": "Paid",
+    "url": "https://www.linkedin.com/learning"
+  },
+  {
+    "name": "Apna App",
+    "description": "Job and career opportunities platform.",
+    "age": "16-18",
+    "type": "Free",
+    "url": "https://apna.co"
+  },
+  {
+    "name": "Indeed Career Guide",
+    "description": "Career advice and job preparation resources.",
+    "age": "14-18",
+    "type": "Free",
+    "url": "https://www.indeed.com/career-advice"
+  },
+  {
+    "name": "FutureLearn Career Courses",
+    "description": "Career-focused structured learning courses.",
+    "age": "14-18",
+    "type": "Freemium",
+    "url": "https://www.futurelearn.com"
+  },
+  {
+    "name": "Harappa Education",
+    "description": "Soft skills and professional development courses.",
+    "age": "15-18",
+    "type": "Paid",
+    "url": "https://harappa.education"
+  },
+  {
+    "name": "TCS iON Career Edge",
+    "description": "Industry readiness courses for youth.",
+    "age": "16-18",
+    "type": "Freemium",
+    "url": "https://www.tcsion.com"
+  },
+  {
+    "name": "Youth4Work",
+    "description": "Career assessment and job readiness platform.",
+    "age": "15-18",
+    "type": "Freemium",
+    "url": "https://www.youth4work.com"
+  },
+  {
+    "name": "Coursera Career Certificates",
+    "description": "Professional certification programs.",
+    "age": "15-18",
+    "type": "Freemium",
+    "url": "https://www.coursera.org"
+  },
+  {
+    "name": "edX Career Programs",
+    "description": "University-backed professional programs.",
+    "age": "15-18",
+    "type": "Freemium",
+    "url": "https://www.edx.org"
+  }
+]
