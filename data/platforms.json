@@ -1099,13 +1099,12 @@
 "mode":"kids",
 "category":"kids-general-knowledge",
 "categoryTitle":"Kids General Knowledge",
-"name":"Primary Homework Help",
-"description":"UK based homework resource site covering history, science and geography topics.",
+"name":"DKfindout!",
+"description":"Interactive educational platform by DK offering fun articles, quizzes and multimedia resources covering science, history, geography and general knowledge topics designed specifically for curious young learners.",
 "age":"7-14",
 "type":"Free",
-"url":"https://www.primaryhomeworkhelp.co.uk"
+"url":"https://www.dkfindout.com"
 },
-
 {
 "id":101,
 "mode":"teacher",
