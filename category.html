@@ -1,101 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>ERaja Category – Kids Learning Directory</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore categorized kids learning platforms including skills, creativity, sports, and government resources.">
-  <link rel="stylesheet" href="assets/css/core.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ERaja Category</title>
+<meta name="description" content="Explore categorized youth platforms.">
+<link rel="stylesheet" href="assets/css/core.css">
 </head>
 <body>
 
 <div class="container">
 
-  <div class="header">
-    <h1 id="category-title">Category</h1>
-    <p id="category-subtitle">Curated learning platforms for young minds.</p>
-  </div>
+<header class="header">
+  <h1 id="category-title">Category</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+</header>
 
-  <div class="nav">
-    <a href="index.html">Home</a>
-    <a href="category.html?cat=learning">Learning</a>
-    <a href="category.html?cat=skills">Skills</a>
-    <a href="category.html?cat=creative">Creative</a>
-    <a href="category.html?cat=sports">Sports</a>
-    <a href="category.html?cat=govt">Government</a>
-  </div>
+<div class="filters" id="filters"></div>
 
-  <div class="filters" id="filters-container">
-    <!-- Auto-generated filter buttons -->
-  </div>
+<div id="directory-container" class="directory-grid"></div>
 
-  <div 
-    id="directory-container" 
-    class="directory-grid"
-    data-category="">
-  </div>
-
-  <div class="footer">
-    © 2026 ERaja | Structured Kids Internet Directory
-  </div>
+<footer class="footer">
+  © 2026 ERaja
+</footer>
 
 </div>
 
 <script src="assets/js/directory-engine.js"></script>
-
-<script>
-// Category Bootstrap Logic
-
-(function () {
-
-  const params = new URLSearchParams(window.location.search);
-  const category = params.get("cat");
-
-  const validCategories = ["learning", "skills", "creative", "sports", "govt"];
-
-  if (!category || !validCategories.includes(category)) {
-    document.getElementById("category-title").innerText = "Category Not Found";
-    document.getElementById("directory-container").innerHTML =
-      "<p style='text-align:center;margin-top:30px;'>Invalid category selected.</p>";
-    return;
-  }
-
-  // Set data attribute for engine
-  document.getElementById("directory-container")
-    .setAttribute("data-category", category);
-
-  // Pretty title
-  const prettyName = category.charAt(0).toUpperCase() + category.slice(1);
-  document.getElementById("category-title").innerText = prettyName + " Platforms";
-
-  // Load JSON manually to generate filters
-  fetch(`data/${category}.json`)
-    .then(res => res.json())
-    .then(data => {
-
-      const types = ["All", ...new Set(data.map(item => item.type))];
-
-      const filtersContainer = document.getElementById("filters-container");
-
-      types.forEach(type => {
-        const btn = document.createElement("button");
-        btn.className = "filter-btn";
-        btn.innerText = type;
-        btn.dataset.type = type;
-        filtersContainer.appendChild(btn);
-      });
-
-      // Now initialize directory engine
-      initDirectory();
-
-    })
-    .catch(() => {
-      document.getElementById("directory-container").innerHTML =
-        "<p style='text-align:center;margin-top:30px;'>Unable to load category data.</p>";
-    });
-
-})();
-</script>
 
 </body>
 </html>
