@@ -1,47 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ERaja – Kids & Youth Internet Directory</title>
-<meta name="description" content="Structured directory of safe and useful platforms for kids and teens including learning, coding, creativity, sports, government and career resources.">
-<link rel="stylesheet" href="assets/css/core.css">
+  <title>ERaja – Kids Learning Internet Directory</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/core.css">
 </head>
 <body>
 
 <div class="container">
 
-<header class="header">
-  <h1>ERaja – Kids & Youth Internet Directory</h1>
-  <p>Structured internet world for learning, growth and exploration.</p>
-</header>
+  <div class="hero">
+    <h1>ERaja – Kids & Youth Internet Directory</h1>
+    <p>Structured internet world for learning, growth and exploration.</p>
+  </div>
 
-<section class="category-grid" id="category-grid">
-</section>
+  <div class="grid">
 
-<footer class="footer">
-  © 2026 ERaja | Built for Young Minds
-</footer>
+    <div class="card">
+      <span class="badge">Academics</span>
+      <h3>Learning Platforms</h3>
+      <p>Structured academic learning websites and educational apps.</p>
+      <a href="category.html?type=learning">Explore →</a>
+    </div>
+
+    <div class="card">
+      <span class="badge">STEM</span>
+      <h3>Coding & STEM</h3>
+      <p>Programming, robotics and science exploration platforms.</p>
+      <a href="category.html?type=coding">Explore →</a>
+    </div>
+
+    <div class="card">
+      <span class="badge">Creativity</span>
+      <h3>Creative Arts</h3>
+      <p>Art, music, animation and storytelling tools.</p>
+      <a href="category.html?type=creative">Explore →</a>
+    </div>
+
+    <div class="card">
+      <span class="badge">Fitness</span>
+      <h3>Sports & Fitness</h3>
+      <p>Physical training and youth sports development.</p>
+      <a href="category.html?type=sports">Explore →</a>
+    </div>
+
+    <div class="card">
+      <span class="badge">Government</span>
+      <h3>Govt & Scholarships</h3>
+      <p>Official education schemes and student support portals.</p>
+      <a href="category.html?type=govt">Explore →</a>
+    </div>
+
+    <div class="card">
+      <span class="badge">Career</span>
+      <h3>Career Exposure</h3>
+      <p>Career exploration and skill development platforms.</p>
+      <a href="category.html?type=career">Explore →</a>
+    </div>
+
+    <div class="card">
+      <span class="badge">Competitions</span>
+      <h3>Olympiads & Contests</h3>
+      <p>Hackathons, quizzes and academic competitions.</p>
+      <a href="category.html?type=competitions">Explore →</a>
+    </div>
+
+    <div class="card">
+      <span class="badge">Tools</span>
+      <h3>Student Tools</h3>
+      <p>Productivity, design and academic tools.</p>
+      <a href="category.html?type=tools">Explore →</a>
+    </div>
+
+    <div class="card">
+      <span class="badge">Safety</span>
+      <h3>Internet Safety</h3>
+      <p>Digital wellbeing and cyber safety resources.</p>
+      <a href="category.html?type=safety">Explore →</a>
+    </div>
+
+  </div>
 
 </div>
-
-<script>
-fetch("data/categories.json")
-.then(res => res.json())
-.then(categories => {
-  const grid = document.getElementById("category-grid");
-  categories.forEach(cat => {
-    const card = document.createElement("div");
-    card.className = "category-card";
-    card.innerHTML = `
-      <h3>${cat.name}</h3>
-      <p>${cat.description}</p>
-      <a href="category.html?cat=${cat.id}">Explore →</a>
-    `;
-    grid.appendChild(card);
-  });
-});
-</script>
 
 </body>
 </html>
