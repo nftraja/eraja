@@ -1,30 +1,107 @@
 [
   {
     "name": "Khan Academy",
-    "description": "Free educational lessons for math, science and more.",
-    "ageGroup": "6-16",
-    "type": "Learning",
-    "link": "https://www.khanacademy.org"
+    "description": "Free structured learning platform for math, science, and humanities.",
+    "age": "6-18",
+    "type": "Free",
+    "url": "https://www.khanacademy.org"
   },
   {
-    "name": "National Geographic Kids",
-    "description": "Science, animals and geography learning content for kids.",
-    "ageGroup": "6-14",
-    "type": "Learning",
-    "link": "https://kids.nationalgeographic.com"
+    "name": "Coursera",
+    "description": "Online courses from universities and institutions worldwide.",
+    "age": "14-18",
+    "type": "Freemium",
+    "url": "https://www.coursera.org"
   },
   {
-    "name": "BBC Bitesize",
-    "description": "Curriculum based learning resources for school students.",
-    "ageGroup": "7-16",
-    "type": "Learning",
-    "link": "https://www.bbc.co.uk/bitesize"
+    "name": "edX",
+    "description": "University-level online learning platform.",
+    "age": "14-18",
+    "type": "Freemium",
+    "url": "https://www.edx.org"
+  },
+  {
+    "name": "Udemy",
+    "description": "Wide range of online courses for skills and academics.",
+    "age": "12-18",
+    "type": "Paid",
+    "url": "https://www.udemy.com"
+  },
+  {
+    "name": "FutureLearn",
+    "description": "Structured online courses from global institutions.",
+    "age": "14-18",
+    "type": "Freemium",
+    "url": "https://www.futurelearn.com"
+  },
+  {
+    "name": "National Digital Library of India",
+    "description": "Government-backed digital academic resource library.",
+    "age": "10-18",
+    "type": "Free",
+    "url": "https://ndl.iitkgp.ac.in"
+  },
+  {
+    "name": "BYJU'S",
+    "description": "Interactive learning platform for school students.",
+    "age": "6-16",
+    "type": "Freemium",
+    "url": "https://byjus.com"
+  },
+  {
+    "name": "Unacademy",
+    "description": "Online learning platform for competitive and school exams.",
+    "age": "12-18",
+    "type": "Freemium",
+    "url": "https://unacademy.com"
+  },
+  {
+    "name": "Vedantu",
+    "description": "Live online tutoring and structured academic courses.",
+    "age": "6-16",
+    "type": "Freemium",
+    "url": "https://www.vedantu.com"
   },
   {
     "name": "Duolingo",
-    "description": "Language learning app for kids and teens.",
-    "ageGroup": "8-16",
-    "type": "Language",
-    "link": "https://www.duolingo.com"
+    "description": "Gamified language learning platform.",
+    "age": "6-18",
+    "type": "Freemium",
+    "url": "https://www.duolingo.com"
+  },
+  {
+    "name": "BBC Bitesize",
+    "description": "Free educational resources and revision tools.",
+    "age": "6-18",
+    "type": "Free",
+    "url": "https://www.bbc.co.uk/bitesize"
+  },
+  {
+    "name": "CK-12 Foundation",
+    "description": "Free digital textbooks and STEM resources.",
+    "age": "10-18",
+    "type": "Free",
+    "url": "https://www.ck12.org"
+  },
+  {
+    "name": "Brilliant",
+    "description": "Interactive STEM problem-solving platform.",
+    "age": "12-18",
+    "type": "Paid",
+    "url": "https://brilliant.org"
+  },
+  {
+    "name": "Toppr",
+    "description": "Personalized learning platform for school students.",
+    "age": "6-16",
+    "type": "Freemium",
+    "url": "https://www.toppr.com"
+  },
+  {
+    "name": "Alison",
+    "description": "Free online courses and certifications.",
+    "age": "14-18",
+    "type": "Free",
+    "url": "https://alison.com"
   }
 ]
