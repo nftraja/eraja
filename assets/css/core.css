@@ -1,172 +1,207 @@
-/* ===== RESET ===== */
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+/* =====================================================
+   ERaja – FINAL CORE CSS
+   Premium Dark App Theme
+   ===================================================== */
+
+/* ---------- RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-  background:#0f172a;
-  color:#e2e8f0;
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e2e8f0;
+    min-height: 100vh;
 }
 
-/* ===== APP HEADER ===== */
-.app-header{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:60px;
-  background:#0b1220;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:0 16px;
-  border-bottom:1px solid rgba(255,255,255,0.05);
-  z-index:1000;
+/* ---------- HEADER ---------- */
+.app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
 
-.app-header h2{
-  font-size:18px;
+.drawer-toggle {
+    font-size: 22px;
+    cursor: pointer;
+    margin-right: 15px;
 }
 
-.menu-btn{
-  font-size:22px;
-  cursor:pointer;
+.app-title {
+    font-size: 18px;
+    font-weight: 600;
 }
 
-/* ===== SIDE DRAWER ===== */
-.drawer{
-  position:fixed;
-  top:0;
-  left:-260px;
-  width:260px;
-  height:100%;
-  background:#111827;
-  padding:20px;
-  transition:0.3s ease;
-  z-index:1200;
+/* ---------- DRAWER ---------- */
+.app-drawer {
+    position: fixed;
+    top: 60px;
+    left: -260px;
+    width: 240px;
+    height: calc(100% - 60px);
+    background: #111827;
+    padding: 20px;
+    transition: 0.3s ease;
+    z-index: 999;
+    overflow-y: auto;
 }
 
-.drawer.active{
-  left:0;
+.app-drawer.open {
+    left: 0;
 }
 
-.drawer h3{
-  margin-bottom:20px;
+.drawer-header {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #94a3b8;
 }
 
-.drawer a{
-  display:block;
-  color:#cbd5e1;
-  text-decoration:none;
-  margin-bottom:14px;
-  font-size:14px;
+/* ---------- MAIN ---------- */
+.app-main {
+    padding: 80px 15px 80px 15px;
 }
 
-.drawer a:hover{
-  color:#3b82f6;
+/* ---------- FILTER BAR ---------- */
+.filter-bar {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-/* ===== OVERLAY ===== */
-.overlay{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.5);
-  display:none;
-  z-index:1100;
+.platform-filter {
+    background: #1f2937;
+    color: #cbd5e1;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    white-space: nowrap;
 }
 
-.overlay.active{
-  display:block;
+.platform-filter:hover {
+    background: #334155;
 }
 
-/* ===== MAIN CONTENT ===== */
-.container{
-  padding:90px 16px 80px 16px;
-  max-width:1100px;
-  margin:auto;
+.platform-filter.active {
+    background: #6366f1;
+    color: #fff;
 }
 
-/* ===== HERO ===== */
-.hero{
-  margin-bottom:30px;
+/* ---------- GRID ---------- */
+.platform-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
 }
 
-.hero h1{
-  font-size:26px;
-  margin-bottom:10px;
+/* ---------- CARD ---------- */
+.platform-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 18px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.hero p{
-  color:#94a3b8;
-  font-size:14px;
+.platform-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.5);
 }
 
-/* ===== GRID ===== */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:18px;
+.platform-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
-/* ===== CARD ===== */
-.card{
-  background:#1e293b;
-  padding:20px;
-  border-radius:16px;
-  transition:0.3s;
-  border:1px solid rgba(255,255,255,0.05);
+.platform-desc {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-bottom: 12px;
+    line-height: 1.4;
 }
 
-.card:hover{
-  transform:translateY(-5px);
-  border-color:#3b82f6;
+.platform-meta {
+    font-size: 12px;
+    color: #cbd5e1;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
 }
 
-.card h3{
-  font-size:18px;
-  margin-bottom:8px;
+.platform-btn {
+    text-decoration: none;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 13px;
+    transition: 0.2s ease;
 }
 
-.card p{
-  font-size:13px;
-  color:#94a3b8;
-  margin-bottom:14px;
+.platform-btn:hover {
+    opacity: 0.85;
 }
 
-/* ===== BUTTON ===== */
-.btn{
-  display:inline-block;
-  padding:8px 16px;
-  background:#3b82f6;
-  border-radius:8px;
-  text-decoration:none;
-  color:white;
-  font-size:13px;
-  transition:0.3s;
+/* ---------- EMPTY STATE ---------- */
+.empty-state {
+    text-align: center;
+    padding: 40px;
+    color: #94a3b8;
 }
 
-.btn:hover{
-  background:#2563eb;
+/* ---------- BOTTOM NAV ---------- */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: #0f172a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.4);
 }
 
-/* ===== FOOTER ===== */
-.app-footer{
-  position:fixed;
-  bottom:0;
-  left:0;
-  width:100%;
-  height:55px;
-  background:#0b1220;
-  border-top:1px solid rgba(255,255,255,0.05);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:12px;
-  color:#94a3b8;
+.bottom-nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.2s ease;
+}
+
+.bottom-nav a.active,
+.bottom-nav a:hover {
+    color: #6366f1;
+}
+
+/* ---------- SCROLLBAR ---------- */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 10px;
 }
