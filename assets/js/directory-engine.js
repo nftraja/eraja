@@ -1,71 +1,103 @@
-document.addEventListener("DOMContentLoaded", init);
+// ===============================
+// ERaja Directory Engine (Final)
+// ===============================
 
-function init() {
-  const params = new URLSearchParams(window.location.search);
-  const category = params.get("cat");
+// Get category from URL
+const params = new URLSearchParams(window.location.search);
+const categoryId = params.get("cat");
 
-  if (!category) {
-    document.getElementById("directory-container").innerHTML =
-      "<p>No category selected.</p>";
-    return;
-  }
+// DOM Elements
+const titleEl = document.getElementById("category-title");
+const descEl = document.getElementById("category-desc");
+const gridEl = document.getElementById("platform-grid");
+const filtersEl = document.getElementById("filters");
 
-  loadCategory(category);
+// Safety check
+if (!categoryId) {
+  titleEl.textContent = "Category Not Found";
+} else {
+  loadCategoryMeta();
+  loadPlatforms();
 }
 
-function loadCategory(category) {
-  fetch(`data/${category}.json`)
+// Load category title & description
+function loadCategoryMeta() {
+  fetch("data/categories.json")
     .then(res => res.json())
-    .then(data => {
-      document.getElementById("category-title").innerText =
-        category.charAt(0).toUpperCase() + category.slice(1);
-
-      createFilters(data);
-      renderCards(data);
-    })
-    .catch(() => {
-      document.getElementById("directory-container").innerHTML =
-        "<p>Category not found.</p>";
+    .then(categories => {
+      const category = categories.find(c => c.id === categoryId);
+      if (!category) {
+        titleEl.textContent = "Invalid Category";
+        return;
+      }
+      titleEl.textContent = category.name;
+      descEl.textContent = category.description;
     });
 }
 
-function createFilters(data) {
-  const filterContainer = document.getElementById("filters");
-  filterContainer.innerHTML = "";
+// Load platform JSON dynamically
+function loadPlatforms() {
+  fetch(`data/${categoryId}.json`)
+    .then(res => res.json())
+    .then(platforms => {
+      renderFilters(platforms);
+      renderPlatforms(platforms);
+    })
+    .catch(() => {
+      gridEl.innerHTML = "<p>No data available.</p>";
+    });
+}
 
-  const types = ["All", ...new Set(data.map(item => item.type))];
+// Render platform cards
+function renderPlatforms(platforms) {
+  gridEl.innerHTML = "";
 
-  types.forEach(type => {
-    const btn = document.createElement("button");
-    btn.className = "filter-btn";
-    btn.innerText = type;
-    btn.onclick = () => {
-      if (type === "All") {
-        renderCards(data);
-      } else {
-        renderCards(data.filter(item => item.type === type));
-      }
-    };
-    filterContainer.appendChild(btn);
+  platforms.forEach(platform => {
+    const card = document.createElement("div");
+    card.className = "platform-card";
+
+    card.innerHTML = `
+      <h4>${platform.name}</h4>
+      <p>${platform.description}</p>
+      <p><strong>Age:</strong> ${platform.age}</p>
+      <p><strong>Type:</strong> ${platform.type}</p>
+      <a href="${platform.url}" target="_blank">Visit Platform →</a>
+    `;
+
+    gridEl.appendChild(card);
   });
 }
 
-function renderCards(data) {
-  const container = document.getElementById("directory-container");
-  container.innerHTML = "";
+// Render filter buttons (by type only)
+function renderFilters(platforms) {
+  const types = [...new Set(platforms.map(p => p.type))];
 
-  data.forEach(item => {
-    const card = document.createElement("div");
-    card.className = "directory-card";
-    card.innerHTML = `
-      <h3>${item.name}</h3>
-      <p>${item.description}</p>
-      <div class="meta">
-        <span>Age: ${item.ageGroup}</span>
-        <span>${item.type}</span>
-      </div>
-      <a href="${item.link}" target="_blank" rel="noopener">Visit Platform →</a>
-    `;
-    container.appendChild(card);
+  filtersEl.innerHTML = "";
+
+  // All button
+  const allBtn = createFilterButton("All", platforms);
+  allBtn.classList.add("active");
+  filtersEl.appendChild(allBtn);
+
+  // Type buttons
+  types.forEach(type => {
+    const filtered = platforms.filter(p => p.type === type);
+    const btn = createFilterButton(type, filtered);
+    filtersEl.appendChild(btn);
   });
+}
+
+function createFilterButton(label, filteredData) {
+  const btn = document.createElement("button");
+  btn.className = "filter-btn";
+  btn.textContent = label;
+
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".filter-btn")
+      .forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    renderPlatforms(filteredData);
+  });
+
+  return btn;
 }
