@@ -1,0 +1,145 @@
+/* ERaja Core Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 28px;
+  color: #38bdf8;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.nav a {
+  text-decoration: none;
+  padding: 8px 14px;
+  background: #1e293b;
+  border-radius: 8px;
+  color: #e2e8f0;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.nav a:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #1e293b;
+  color: #e2e8f0;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.filter-btn:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+/* Directory Cards */
+.directory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.directory-card {
+  background: #1e293b;
+  padding: 18px;
+  border-radius: 12px;
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.directory-card:hover {
+  transform: translateY(-4px);
+  background: #334155;
+}
+
+.directory-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #38bdf8;
+}
+
+.directory-card p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #cbd5e1;
+}
+
+.meta {
+  font-size: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  color: #94a3b8;
+}
+
+.directory-card a {
+  text-decoration: none;
+  padding: 6px 10px;
+  background: #38bdf8;
+  color: #0f172a;
+  border-radius: 6px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.directory-card a:hover {
+  opacity: 0.8;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 40px;
+}
