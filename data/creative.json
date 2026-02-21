@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Art for Kids Hub",
+    "description": "Step-by-step drawing lessons for kids.",
+    "ageGroup": "5-14",
+    "type": "Art",
+    "link": "https://www.artforkidshub.com"
+  },
+  {
+    "name": "Canva for Education",
+    "description": "Creative design tools for students.",
+    "ageGroup": "10-16",
+    "type": "Design",
+    "link": "https://www.canva.com/education/"
+  },
+  {
+    "name": "Chrome Music Lab",
+    "description": "Interactive music learning experiments.",
+    "ageGroup": "6-14",
+    "type": "Music",
+    "link": "https://musiclab.chromeexperiments.com"
+  },
+  {
+    "name": "Storyboard That",
+    "description": "Create visual stories and comics online.",
+    "ageGroup": "8-16",
+    "type": "Creative Writing",
+    "link": "https://www.storyboardthat.com"
+  }
+]
